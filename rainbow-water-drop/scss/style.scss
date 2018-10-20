@@ -1,0 +1,41 @@
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;border-radius:50%;
+  }
+}
+.circle{
+  .dot{
+    background-color: yellow;
+    width: 15px;height: 15px;
+    transform-origin:center;
+  }  
+  @for $i from 1 through 30{ 
+    &:nth-child(#{$i}){
+      width: $i*25 + 50px;height: $i*25 + 50px;
+      .dot{
+        @for $j from 1 through 30{
+          &:nth-child(#{$j}){
+            transform: rotate(#{$j * 360 / 30}deg) translate(($i*25 + 50px) / 2) scale(1);
+            animation: arcAnimation-#{$j} 0.75s linear infinite;
+            animation-delay: -($j + $i) * 0.75s / 15;
+            background-color: hsla($j * 360 / 30,100%,50%,1);
+            box-shadow: hsla($j * 360 / 30,100%,50%,1) 0px 0px 10px 1px;
+          }
+        }
+      }
+    }
+  }
+}
+@for $i from 1 through 30{
+  @keyframes arcAnimation-#{$i}{
+    100%{
+      transform: rotate(#{$i*360/30}deg) translate(150px) scale(0.15);
+    }
+  }
+}
