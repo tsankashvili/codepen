@@ -1,0 +1,272 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+}
+body *, body *:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.thorns:nth-child(1) {
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+}
+.thorns:nth-child(2) {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+.thorns:nth-child(3) {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+.thorns:nth-child(4) {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.thorns:nth-child(5) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.thorns .thorn {
+  width: 225px;
+  height: 225px;
+  -webkit-animation: 2.5s thorns ease-in-out infinite;
+          animation: 2.5s thorns ease-in-out infinite;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.thorns .thorn span {
+  -webkit-animation: 5s dance linear infinite;
+          animation: 5s dance linear infinite;
+}
+.thorns .thorn span:after {
+  content: '';
+  border-left: 30px groove;
+  border-right: 30px groove;
+  border-radius: 50%;
+}
+.thorns .thorn:nth-child(0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.thorns .thorn:nth-child(0) span:after {
+  -webkit-transform: rotate(0deg) translate(300px);
+          transform: rotate(0deg) translate(300px);
+  border-color: red;
+}
+.thorns .thorn:nth-child(1) {
+  -webkit-animation-delay: -0.125s;
+          animation-delay: -0.125s;
+}
+.thorns .thorn:nth-child(1) span:after {
+  -webkit-transform: rotate(18deg) translate(300px);
+          transform: rotate(18deg) translate(300px);
+  border-color: #ff004d;
+}
+.thorns .thorn:nth-child(2) {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+.thorns .thorn:nth-child(2) span:after {
+  -webkit-transform: rotate(36deg) translate(300px);
+          transform: rotate(36deg) translate(300px);
+  border-color: #ff0099;
+}
+.thorns .thorn:nth-child(3) {
+  -webkit-animation-delay: -0.375s;
+          animation-delay: -0.375s;
+}
+.thorns .thorn:nth-child(3) span:after {
+  -webkit-transform: rotate(54deg) translate(300px);
+          transform: rotate(54deg) translate(300px);
+  border-color: #ff00e6;
+}
+.thorns .thorn:nth-child(4) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.thorns .thorn:nth-child(4) span:after {
+  -webkit-transform: rotate(72deg) translate(300px);
+          transform: rotate(72deg) translate(300px);
+  border-color: #cc00ff;
+}
+.thorns .thorn:nth-child(5) {
+  -webkit-animation-delay: -0.625s;
+          animation-delay: -0.625s;
+}
+.thorns .thorn:nth-child(5) span:after {
+  -webkit-transform: rotate(90deg) translate(300px);
+          transform: rotate(90deg) translate(300px);
+  border-color: #8000ff;
+}
+.thorns .thorn:nth-child(6) {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+.thorns .thorn:nth-child(6) span:after {
+  -webkit-transform: rotate(108deg) translate(300px);
+          transform: rotate(108deg) translate(300px);
+  border-color: #3300ff;
+}
+.thorns .thorn:nth-child(7) {
+  -webkit-animation-delay: -0.875s;
+          animation-delay: -0.875s;
+}
+.thorns .thorn:nth-child(7) span:after {
+  -webkit-transform: rotate(126deg) translate(300px);
+          transform: rotate(126deg) translate(300px);
+  border-color: #001aff;
+}
+.thorns .thorn:nth-child(8) {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+.thorns .thorn:nth-child(8) span:after {
+  -webkit-transform: rotate(144deg) translate(300px);
+          transform: rotate(144deg) translate(300px);
+  border-color: #0066ff;
+}
+.thorns .thorn:nth-child(9) {
+  -webkit-animation-delay: -1.125s;
+          animation-delay: -1.125s;
+}
+.thorns .thorn:nth-child(9) span:after {
+  -webkit-transform: rotate(162deg) translate(300px);
+          transform: rotate(162deg) translate(300px);
+  border-color: #00b3ff;
+}
+.thorns .thorn:nth-child(10) {
+  -webkit-animation-delay: -1.25s;
+          animation-delay: -1.25s;
+}
+.thorns .thorn:nth-child(10) span:after {
+  -webkit-transform: rotate(180deg) translate(300px);
+          transform: rotate(180deg) translate(300px);
+  border-color: cyan;
+}
+.thorns .thorn:nth-child(11) {
+  -webkit-animation-delay: -1.375s;
+          animation-delay: -1.375s;
+}
+.thorns .thorn:nth-child(11) span:after {
+  -webkit-transform: rotate(198deg) translate(300px);
+          transform: rotate(198deg) translate(300px);
+  border-color: #00ffb3;
+}
+.thorns .thorn:nth-child(12) {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.thorns .thorn:nth-child(12) span:after {
+  -webkit-transform: rotate(216deg) translate(300px);
+          transform: rotate(216deg) translate(300px);
+  border-color: #00ff66;
+}
+.thorns .thorn:nth-child(13) {
+  -webkit-animation-delay: -1.625s;
+          animation-delay: -1.625s;
+}
+.thorns .thorn:nth-child(13) span:after {
+  -webkit-transform: rotate(234deg) translate(300px);
+          transform: rotate(234deg) translate(300px);
+  border-color: #00ff1a;
+}
+.thorns .thorn:nth-child(14) {
+  -webkit-animation-delay: -1.75s;
+          animation-delay: -1.75s;
+}
+.thorns .thorn:nth-child(14) span:after {
+  -webkit-transform: rotate(252deg) translate(300px);
+          transform: rotate(252deg) translate(300px);
+  border-color: #33ff00;
+}
+.thorns .thorn:nth-child(15) {
+  -webkit-animation-delay: -1.875s;
+          animation-delay: -1.875s;
+}
+.thorns .thorn:nth-child(15) span:after {
+  -webkit-transform: rotate(270deg) translate(300px);
+          transform: rotate(270deg) translate(300px);
+  border-color: #80ff00;
+}
+.thorns .thorn:nth-child(16) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+.thorns .thorn:nth-child(16) span:after {
+  -webkit-transform: rotate(288deg) translate(300px);
+          transform: rotate(288deg) translate(300px);
+  border-color: #ccff00;
+}
+.thorns .thorn:nth-child(17) {
+  -webkit-animation-delay: -2.125s;
+          animation-delay: -2.125s;
+}
+.thorns .thorn:nth-child(17) span:after {
+  -webkit-transform: rotate(306deg) translate(300px);
+          transform: rotate(306deg) translate(300px);
+  border-color: #ffe600;
+}
+.thorns .thorn:nth-child(18) {
+  -webkit-animation-delay: -2.25s;
+          animation-delay: -2.25s;
+}
+.thorns .thorn:nth-child(18) span:after {
+  -webkit-transform: rotate(324deg) translate(300px);
+          transform: rotate(324deg) translate(300px);
+  border-color: #ff9900;
+}
+.thorns .thorn:nth-child(19) {
+  -webkit-animation-delay: -2.375s;
+          animation-delay: -2.375s;
+}
+.thorns .thorn:nth-child(19) span:after {
+  -webkit-transform: rotate(342deg) translate(300px);
+          transform: rotate(342deg) translate(300px);
+  border-color: #ff4d00;
+}
+.thorns .thorn:nth-child(20) {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+.thorns .thorn:nth-child(20) span:after {
+  -webkit-transform: rotate(360deg) translate(300px);
+          transform: rotate(360deg) translate(300px);
+  border-color: red;
+}
+
+@-webkit-keyframes thorns {
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes thorns {
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes dance {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes dance {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

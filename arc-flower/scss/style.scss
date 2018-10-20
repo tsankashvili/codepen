@@ -1,0 +1,42 @@
+/*variables*/
+$arcSpeed: 2s;
+$arcColor: #00ff96;
+$arcCount: 66;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.circle{
+  width: 100px;height: 100px;
+  $tr: 80px;$count: 12;$index: 1;
+  @for $i from 1 through $arcCount{
+    @if($i == 13 or $i == 35){
+      $tr: $tr + 100px;
+      $count: $count + 10;
+      $index: 1;
+    }
+    $r: $index*360/$count;
+    &:nth-child(#{$i}){
+      transform: rotate(#{$r}deg) translate($tr);
+    }
+    $index: $index + 1;
+  }    
+  .arc{
+    border-right: 10px solid $arcColor;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    animation: arcAnimation $arcSpeed linear infinite;
+  }    
+}
+@keyframes arcAnimation{
+  100%{
+    transform: rotate(450deg);
+  }
+}

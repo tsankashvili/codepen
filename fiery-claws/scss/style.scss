@@ -1,0 +1,40 @@
+$speed: 1.35s;
+$circle-count: 10;
+$claw-count: 30;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+  *{
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+  }
+}
+.circles{
+	.circle{
+		animation: Claws $speed linear infinite;
+	}
+	@for $i from 1 through $circle-count{
+		&:nth-child(#{$i}){
+			transform: rotate($i * 360deg / $circle-count) translate(150px);
+		}
+	}
+	.claw{
+		width: 300px;height: 150px;
+		border-right: 5px solid;
+    border-radius: 20%;
+		@for $i from 1 through $claw-count{
+			&:nth-child(#{$i}){
+				border-color: hsla($i * 50 / $claw-count,100%,50%,1);
+				transform: scale($i * 1 / $claw-count) rotate($i * 360deg / $claw-count) translate(-300px);
+			}
+		}
+	}
+}
+@keyframes Claws{
+  100%{
+    transform: rotate(360deg);
+	}
+}

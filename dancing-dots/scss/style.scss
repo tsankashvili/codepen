@@ -1,0 +1,133 @@
+/*variables*/
+$darkColor: #212121;
+$smDotsWidth: 13px;
+$bgDotsWidth: 15px;
+$bgCirclesSpeed: 45s;
+$smCirclesSpeed: 20s;
+$bgDotsSpeed: 5s;
+$smDotsSpeed: 2s;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  overflow: hidden;
+  margin: 0;
+  * {
+    border-radius: 50%;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@mixin dots {
+  &:nth-child(2n) {
+    .dot {
+      &:nth-child(2n) {
+        background-color: $darkColor;
+      }
+      &:nth-child(2n-1) {
+        border: 1px solid $darkColor;
+      }
+    }
+  }
+  &:nth-child(2n-1) {
+    .dot {
+      &:nth-child(2n) {
+        border: 1px solid $darkColor;
+      }
+      &:nth-child(2n-1) {
+        background-color: $darkColor;
+      }
+    }
+  }
+}
+
+@mixin dotDagree {
+  transform-origin: center;
+  transform: rotate(0deg);
+  @for $i from 1 through 8 {
+    $degree: #{($i - 1) * 360/8}deg;
+    &:nth-child(#{$i}) {
+      transform: rotate($degree) translate(60%);
+    }
+  }
+}
+
+.circles {
+  width: 350px;
+  height: 350px;
+  .bigCircles {
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    animation: CirclesMoving $bgCirclesSpeed linear infinite;
+    .bigDots {
+      width: 160px;
+      height: 160px;
+      /*border: 1px solid red;*/
+      @include dotDagree();
+      @include dots();
+      @for $i from 0 through 14 {
+        .dot:nth-child(#{$i + 1}) {
+          $r: #{0deg - ($i - 1) * 10};
+          transform: rotate($r) translate(78px);
+          animation: bgDotsMoving-#{$i} $bgDotsSpeed linear infinite;
+          width: #{$bgDotsWidth - $i};
+          height: #{$bgDotsWidth - $i};
+        }
+      }
+    }
+  }
+  .smallCircles {
+    width: 300px;
+    height: 300px;
+    transform: rotate(0deg);
+    animation: CirclesMoving $smCirclesSpeed linear -1s infinite;
+    .smallDots {
+      width: 150px;
+      height: 150px;
+      /*border: 1px solid green;*/
+      @include dotDagree();
+      @include dots();
+      @for $i from 0 through 14 {
+        .dot:nth-child(#{$i+1}) {
+          $r: #{0deg - ($i - 1) * 15};
+          transform: rotate($r) translate(48px);
+          animation: smDotsMoving-#{$i} $smDotsSpeed linear infinite;
+          width: #{$smDotsWidth - $i};
+          height: #{$smDotsWidth - $i};
+        }
+      }
+    }
+  }
+}
+
+@keyframes CirclesMoving {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@for $i from 0 through 14 {
+  $bg-r: #{360deg - ($i - 1) * 10};
+  $sm-r: #{360deg - ($i - 1) * 15};
+  @keyframes bgDotsMoving-#{$i} {
+    100% {
+      transform: rotate($bg-r) translate(78px);
+    }
+  }
+  @keyframes smDotsMoving-#{$i} {
+    100% {
+      transform: rotate($sm-r) translate(48px);
+    }
+  }
+} 

@@ -1,0 +1,814 @@
+/*variables*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+}
+
+.crosswise {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-animation: 10s crosswise linear infinite;
+          animation: 10s crosswise linear infinite;
+}
+.crosswise .square {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  -webkit-animation: 1.5s -0.5s AnimationSquare linear infinite;
+          animation: 1.5s -0.5s AnimationSquare linear infinite;
+}
+.crosswise .square:before, .crosswise .square:after {
+  content: "";
+  position: absolute;
+  width: 44.975px;
+  height: 2px;
+  z-index: 1;
+}
+.crosswise .square:before {
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  left: 2px;
+  top: 1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.crosswise .square:after {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  left: 2px;
+  bottom: 1px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.crosswise .square .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+.crosswise .square .dot:nth-child(2) {
+  right: 0;
+}
+.crosswise .square .dot:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+.crosswise .square .dot:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+.crosswise .square:nth-child(1) {
+  left: 0px;
+  top: 0px;
+}
+.crosswise .square:nth-child(1) .dot, .crosswise .square:nth-child(1):before, .crosswise .square:nth-child(1):after {
+  background-color: red;
+}
+.crosswise .square:nth-child(2) {
+  left: 29px;
+  top: 0px;
+}
+.crosswise .square:nth-child(2) .dot, .crosswise .square:nth-child(2):before, .crosswise .square:nth-child(2):after {
+  background-color: #ff0f00;
+}
+.crosswise .square:nth-child(3) {
+  left: 58px;
+  top: 0px;
+}
+.crosswise .square:nth-child(3) .dot, .crosswise .square:nth-child(3):before, .crosswise .square:nth-child(3):after {
+  background-color: #ff1f00;
+}
+.crosswise .square:nth-child(4) {
+  left: 87px;
+  top: 0px;
+}
+.crosswise .square:nth-child(4) .dot, .crosswise .square:nth-child(4):before, .crosswise .square:nth-child(4):after {
+  background-color: #ff2e00;
+}
+.crosswise .square:nth-child(5) {
+  left: 116px;
+  top: 0px;
+}
+.crosswise .square:nth-child(5) .dot, .crosswise .square:nth-child(5):before, .crosswise .square:nth-child(5):after {
+  background-color: #ff3d00;
+}
+.crosswise .square:nth-child(6) {
+  left: 145px;
+  top: 0px;
+}
+.crosswise .square:nth-child(6) .dot, .crosswise .square:nth-child(6):before, .crosswise .square:nth-child(6):after {
+  background-color: #ff4d00;
+}
+.crosswise .square:nth-child(7) {
+  left: 174px;
+  top: 0px;
+}
+.crosswise .square:nth-child(7) .dot, .crosswise .square:nth-child(7):before, .crosswise .square:nth-child(7):after {
+  background-color: #ff5c00;
+}
+.crosswise .square:nth-child(8) {
+  left: 203px;
+  top: 0px;
+}
+.crosswise .square:nth-child(8) .dot, .crosswise .square:nth-child(8):before, .crosswise .square:nth-child(8):after {
+  background-color: #ff6b00;
+}
+.crosswise .square:nth-child(9) {
+  left: 232px;
+  top: 0px;
+}
+.crosswise .square:nth-child(9) .dot, .crosswise .square:nth-child(9):before, .crosswise .square:nth-child(9):after {
+  background-color: #ff7a00;
+}
+.crosswise .square:nth-child(10) {
+  left: 261px;
+  top: 0px;
+}
+.crosswise .square:nth-child(10) .dot, .crosswise .square:nth-child(10):before, .crosswise .square:nth-child(10):after {
+  background-color: #ff8a00;
+}
+.crosswise .square:nth-child(11) {
+  left: 0px;
+  top: 29px;
+}
+.crosswise .square:nth-child(11) .dot, .crosswise .square:nth-child(11):before, .crosswise .square:nth-child(11):after {
+  background-color: #ff9900;
+}
+.crosswise .square:nth-child(12) {
+  left: 29px;
+  top: 29px;
+}
+.crosswise .square:nth-child(12) .dot, .crosswise .square:nth-child(12):before, .crosswise .square:nth-child(12):after {
+  background-color: #ffa800;
+}
+.crosswise .square:nth-child(13) {
+  left: 58px;
+  top: 29px;
+}
+.crosswise .square:nth-child(13) .dot, .crosswise .square:nth-child(13):before, .crosswise .square:nth-child(13):after {
+  background-color: #ffb800;
+}
+.crosswise .square:nth-child(14) {
+  left: 87px;
+  top: 29px;
+}
+.crosswise .square:nth-child(14) .dot, .crosswise .square:nth-child(14):before, .crosswise .square:nth-child(14):after {
+  background-color: #ffc700;
+}
+.crosswise .square:nth-child(15) {
+  left: 116px;
+  top: 29px;
+}
+.crosswise .square:nth-child(15) .dot, .crosswise .square:nth-child(15):before, .crosswise .square:nth-child(15):after {
+  background-color: #ffd600;
+}
+.crosswise .square:nth-child(16) {
+  left: 145px;
+  top: 29px;
+}
+.crosswise .square:nth-child(16) .dot, .crosswise .square:nth-child(16):before, .crosswise .square:nth-child(16):after {
+  background-color: #ffe600;
+}
+.crosswise .square:nth-child(17) {
+  left: 174px;
+  top: 29px;
+}
+.crosswise .square:nth-child(17) .dot, .crosswise .square:nth-child(17):before, .crosswise .square:nth-child(17):after {
+  background-color: #fff500;
+}
+.crosswise .square:nth-child(18) {
+  left: 203px;
+  top: 29px;
+}
+.crosswise .square:nth-child(18) .dot, .crosswise .square:nth-child(18):before, .crosswise .square:nth-child(18):after {
+  background-color: #faff00;
+}
+.crosswise .square:nth-child(19) {
+  left: 232px;
+  top: 29px;
+}
+.crosswise .square:nth-child(19) .dot, .crosswise .square:nth-child(19):before, .crosswise .square:nth-child(19):after {
+  background-color: #ebff00;
+}
+.crosswise .square:nth-child(20) {
+  left: 261px;
+  top: 29px;
+}
+.crosswise .square:nth-child(20) .dot, .crosswise .square:nth-child(20):before, .crosswise .square:nth-child(20):after {
+  background-color: #dbff00;
+}
+.crosswise .square:nth-child(21) {
+  left: 0px;
+  top: 58px;
+}
+.crosswise .square:nth-child(21) .dot, .crosswise .square:nth-child(21):before, .crosswise .square:nth-child(21):after {
+  background-color: #ccff00;
+}
+.crosswise .square:nth-child(22) {
+  left: 29px;
+  top: 58px;
+}
+.crosswise .square:nth-child(22) .dot, .crosswise .square:nth-child(22):before, .crosswise .square:nth-child(22):after {
+  background-color: #bdff00;
+}
+.crosswise .square:nth-child(23) {
+  left: 58px;
+  top: 58px;
+}
+.crosswise .square:nth-child(23) .dot, .crosswise .square:nth-child(23):before, .crosswise .square:nth-child(23):after {
+  background-color: #adff00;
+}
+.crosswise .square:nth-child(24) {
+  left: 87px;
+  top: 58px;
+}
+.crosswise .square:nth-child(24) .dot, .crosswise .square:nth-child(24):before, .crosswise .square:nth-child(24):after {
+  background-color: #9eff00;
+}
+.crosswise .square:nth-child(25) {
+  left: 116px;
+  top: 58px;
+}
+.crosswise .square:nth-child(25) .dot, .crosswise .square:nth-child(25):before, .crosswise .square:nth-child(25):after {
+  background-color: #8fff00;
+}
+.crosswise .square:nth-child(26) {
+  left: 145px;
+  top: 58px;
+}
+.crosswise .square:nth-child(26) .dot, .crosswise .square:nth-child(26):before, .crosswise .square:nth-child(26):after {
+  background-color: #80ff00;
+}
+.crosswise .square:nth-child(27) {
+  left: 174px;
+  top: 58px;
+}
+.crosswise .square:nth-child(27) .dot, .crosswise .square:nth-child(27):before, .crosswise .square:nth-child(27):after {
+  background-color: #70ff00;
+}
+.crosswise .square:nth-child(28) {
+  left: 203px;
+  top: 58px;
+}
+.crosswise .square:nth-child(28) .dot, .crosswise .square:nth-child(28):before, .crosswise .square:nth-child(28):after {
+  background-color: #61ff00;
+}
+.crosswise .square:nth-child(29) {
+  left: 232px;
+  top: 58px;
+}
+.crosswise .square:nth-child(29) .dot, .crosswise .square:nth-child(29):before, .crosswise .square:nth-child(29):after {
+  background-color: #52ff00;
+}
+.crosswise .square:nth-child(30) {
+  left: 261px;
+  top: 58px;
+}
+.crosswise .square:nth-child(30) .dot, .crosswise .square:nth-child(30):before, .crosswise .square:nth-child(30):after {
+  background-color: #42ff00;
+}
+.crosswise .square:nth-child(31) {
+  left: 0px;
+  top: 87px;
+}
+.crosswise .square:nth-child(31) .dot, .crosswise .square:nth-child(31):before, .crosswise .square:nth-child(31):after {
+  background-color: #33ff00;
+}
+.crosswise .square:nth-child(32) {
+  left: 29px;
+  top: 87px;
+}
+.crosswise .square:nth-child(32) .dot, .crosswise .square:nth-child(32):before, .crosswise .square:nth-child(32):after {
+  background-color: #24ff00;
+}
+.crosswise .square:nth-child(33) {
+  left: 58px;
+  top: 87px;
+}
+.crosswise .square:nth-child(33) .dot, .crosswise .square:nth-child(33):before, .crosswise .square:nth-child(33):after {
+  background-color: #14ff00;
+}
+.crosswise .square:nth-child(34) {
+  left: 87px;
+  top: 87px;
+}
+.crosswise .square:nth-child(34) .dot, .crosswise .square:nth-child(34):before, .crosswise .square:nth-child(34):after {
+  background-color: #05ff00;
+}
+.crosswise .square:nth-child(35) {
+  left: 116px;
+  top: 87px;
+}
+.crosswise .square:nth-child(35) .dot, .crosswise .square:nth-child(35):before, .crosswise .square:nth-child(35):after {
+  background-color: #00ff0a;
+}
+.crosswise .square:nth-child(36) {
+  left: 145px;
+  top: 87px;
+}
+.crosswise .square:nth-child(36) .dot, .crosswise .square:nth-child(36):before, .crosswise .square:nth-child(36):after {
+  background-color: #00ff1a;
+}
+.crosswise .square:nth-child(37) {
+  left: 174px;
+  top: 87px;
+}
+.crosswise .square:nth-child(37) .dot, .crosswise .square:nth-child(37):before, .crosswise .square:nth-child(37):after {
+  background-color: #00ff29;
+}
+.crosswise .square:nth-child(38) {
+  left: 203px;
+  top: 87px;
+}
+.crosswise .square:nth-child(38) .dot, .crosswise .square:nth-child(38):before, .crosswise .square:nth-child(38):after {
+  background-color: #00ff38;
+}
+.crosswise .square:nth-child(39) {
+  left: 232px;
+  top: 87px;
+}
+.crosswise .square:nth-child(39) .dot, .crosswise .square:nth-child(39):before, .crosswise .square:nth-child(39):after {
+  background-color: #00ff47;
+}
+.crosswise .square:nth-child(40) {
+  left: 261px;
+  top: 87px;
+}
+.crosswise .square:nth-child(40) .dot, .crosswise .square:nth-child(40):before, .crosswise .square:nth-child(40):after {
+  background-color: #00ff57;
+}
+.crosswise .square:nth-child(41) {
+  left: 0px;
+  top: 116px;
+}
+.crosswise .square:nth-child(41) .dot, .crosswise .square:nth-child(41):before, .crosswise .square:nth-child(41):after {
+  background-color: #00ff66;
+}
+.crosswise .square:nth-child(42) {
+  left: 29px;
+  top: 116px;
+}
+.crosswise .square:nth-child(42) .dot, .crosswise .square:nth-child(42):before, .crosswise .square:nth-child(42):after {
+  background-color: #00ff75;
+}
+.crosswise .square:nth-child(43) {
+  left: 58px;
+  top: 116px;
+}
+.crosswise .square:nth-child(43) .dot, .crosswise .square:nth-child(43):before, .crosswise .square:nth-child(43):after {
+  background-color: #00ff85;
+}
+.crosswise .square:nth-child(44) {
+  left: 87px;
+  top: 116px;
+}
+.crosswise .square:nth-child(44) .dot, .crosswise .square:nth-child(44):before, .crosswise .square:nth-child(44):after {
+  background-color: #00ff94;
+}
+.crosswise .square:nth-child(45) {
+  left: 116px;
+  top: 116px;
+}
+.crosswise .square:nth-child(45) .dot, .crosswise .square:nth-child(45):before, .crosswise .square:nth-child(45):after {
+  background-color: #00ffa3;
+}
+.crosswise .square:nth-child(46) {
+  left: 145px;
+  top: 116px;
+}
+.crosswise .square:nth-child(46) .dot, .crosswise .square:nth-child(46):before, .crosswise .square:nth-child(46):after {
+  background-color: #00ffb3;
+}
+.crosswise .square:nth-child(47) {
+  left: 174px;
+  top: 116px;
+}
+.crosswise .square:nth-child(47) .dot, .crosswise .square:nth-child(47):before, .crosswise .square:nth-child(47):after {
+  background-color: #00ffc2;
+}
+.crosswise .square:nth-child(48) {
+  left: 203px;
+  top: 116px;
+}
+.crosswise .square:nth-child(48) .dot, .crosswise .square:nth-child(48):before, .crosswise .square:nth-child(48):after {
+  background-color: #00ffd1;
+}
+.crosswise .square:nth-child(49) {
+  left: 232px;
+  top: 116px;
+}
+.crosswise .square:nth-child(49) .dot, .crosswise .square:nth-child(49):before, .crosswise .square:nth-child(49):after {
+  background-color: #00ffe0;
+}
+.crosswise .square:nth-child(50) {
+  left: 261px;
+  top: 116px;
+}
+.crosswise .square:nth-child(50) .dot, .crosswise .square:nth-child(50):before, .crosswise .square:nth-child(50):after {
+  background-color: #00fff0;
+}
+.crosswise .square:nth-child(51) {
+  left: 0px;
+  top: 145px;
+}
+.crosswise .square:nth-child(51) .dot, .crosswise .square:nth-child(51):before, .crosswise .square:nth-child(51):after {
+  background-color: cyan;
+}
+.crosswise .square:nth-child(52) {
+  left: 29px;
+  top: 145px;
+}
+.crosswise .square:nth-child(52) .dot, .crosswise .square:nth-child(52):before, .crosswise .square:nth-child(52):after {
+  background-color: #00f0ff;
+}
+.crosswise .square:nth-child(53) {
+  left: 58px;
+  top: 145px;
+}
+.crosswise .square:nth-child(53) .dot, .crosswise .square:nth-child(53):before, .crosswise .square:nth-child(53):after {
+  background-color: #00e0ff;
+}
+.crosswise .square:nth-child(54) {
+  left: 87px;
+  top: 145px;
+}
+.crosswise .square:nth-child(54) .dot, .crosswise .square:nth-child(54):before, .crosswise .square:nth-child(54):after {
+  background-color: #00d1ff;
+}
+.crosswise .square:nth-child(55) {
+  left: 116px;
+  top: 145px;
+}
+.crosswise .square:nth-child(55) .dot, .crosswise .square:nth-child(55):before, .crosswise .square:nth-child(55):after {
+  background-color: #00c2ff;
+}
+.crosswise .square:nth-child(56) {
+  left: 145px;
+  top: 145px;
+}
+.crosswise .square:nth-child(56) .dot, .crosswise .square:nth-child(56):before, .crosswise .square:nth-child(56):after {
+  background-color: #00b3ff;
+}
+.crosswise .square:nth-child(57) {
+  left: 174px;
+  top: 145px;
+}
+.crosswise .square:nth-child(57) .dot, .crosswise .square:nth-child(57):before, .crosswise .square:nth-child(57):after {
+  background-color: #00a3ff;
+}
+.crosswise .square:nth-child(58) {
+  left: 203px;
+  top: 145px;
+}
+.crosswise .square:nth-child(58) .dot, .crosswise .square:nth-child(58):before, .crosswise .square:nth-child(58):after {
+  background-color: #0094ff;
+}
+.crosswise .square:nth-child(59) {
+  left: 232px;
+  top: 145px;
+}
+.crosswise .square:nth-child(59) .dot, .crosswise .square:nth-child(59):before, .crosswise .square:nth-child(59):after {
+  background-color: #0085ff;
+}
+.crosswise .square:nth-child(60) {
+  left: 261px;
+  top: 145px;
+}
+.crosswise .square:nth-child(60) .dot, .crosswise .square:nth-child(60):before, .crosswise .square:nth-child(60):after {
+  background-color: #0075ff;
+}
+.crosswise .square:nth-child(61) {
+  left: 0px;
+  top: 174px;
+}
+.crosswise .square:nth-child(61) .dot, .crosswise .square:nth-child(61):before, .crosswise .square:nth-child(61):after {
+  background-color: #0066ff;
+}
+.crosswise .square:nth-child(62) {
+  left: 29px;
+  top: 174px;
+}
+.crosswise .square:nth-child(62) .dot, .crosswise .square:nth-child(62):before, .crosswise .square:nth-child(62):after {
+  background-color: #0057ff;
+}
+.crosswise .square:nth-child(63) {
+  left: 58px;
+  top: 174px;
+}
+.crosswise .square:nth-child(63) .dot, .crosswise .square:nth-child(63):before, .crosswise .square:nth-child(63):after {
+  background-color: #0047ff;
+}
+.crosswise .square:nth-child(64) {
+  left: 87px;
+  top: 174px;
+}
+.crosswise .square:nth-child(64) .dot, .crosswise .square:nth-child(64):before, .crosswise .square:nth-child(64):after {
+  background-color: #0038ff;
+}
+.crosswise .square:nth-child(65) {
+  left: 116px;
+  top: 174px;
+}
+.crosswise .square:nth-child(65) .dot, .crosswise .square:nth-child(65):before, .crosswise .square:nth-child(65):after {
+  background-color: #0029ff;
+}
+.crosswise .square:nth-child(66) {
+  left: 145px;
+  top: 174px;
+}
+.crosswise .square:nth-child(66) .dot, .crosswise .square:nth-child(66):before, .crosswise .square:nth-child(66):after {
+  background-color: #001aff;
+}
+.crosswise .square:nth-child(67) {
+  left: 174px;
+  top: 174px;
+}
+.crosswise .square:nth-child(67) .dot, .crosswise .square:nth-child(67):before, .crosswise .square:nth-child(67):after {
+  background-color: #000aff;
+}
+.crosswise .square:nth-child(68) {
+  left: 203px;
+  top: 174px;
+}
+.crosswise .square:nth-child(68) .dot, .crosswise .square:nth-child(68):before, .crosswise .square:nth-child(68):after {
+  background-color: #0500ff;
+}
+.crosswise .square:nth-child(69) {
+  left: 232px;
+  top: 174px;
+}
+.crosswise .square:nth-child(69) .dot, .crosswise .square:nth-child(69):before, .crosswise .square:nth-child(69):after {
+  background-color: #1400ff;
+}
+.crosswise .square:nth-child(70) {
+  left: 261px;
+  top: 174px;
+}
+.crosswise .square:nth-child(70) .dot, .crosswise .square:nth-child(70):before, .crosswise .square:nth-child(70):after {
+  background-color: #2400ff;
+}
+.crosswise .square:nth-child(71) {
+  left: 0px;
+  top: 203px;
+}
+.crosswise .square:nth-child(71) .dot, .crosswise .square:nth-child(71):before, .crosswise .square:nth-child(71):after {
+  background-color: #3300ff;
+}
+.crosswise .square:nth-child(72) {
+  left: 29px;
+  top: 203px;
+}
+.crosswise .square:nth-child(72) .dot, .crosswise .square:nth-child(72):before, .crosswise .square:nth-child(72):after {
+  background-color: #4200ff;
+}
+.crosswise .square:nth-child(73) {
+  left: 58px;
+  top: 203px;
+}
+.crosswise .square:nth-child(73) .dot, .crosswise .square:nth-child(73):before, .crosswise .square:nth-child(73):after {
+  background-color: #5200ff;
+}
+.crosswise .square:nth-child(74) {
+  left: 87px;
+  top: 203px;
+}
+.crosswise .square:nth-child(74) .dot, .crosswise .square:nth-child(74):before, .crosswise .square:nth-child(74):after {
+  background-color: #6100ff;
+}
+.crosswise .square:nth-child(75) {
+  left: 116px;
+  top: 203px;
+}
+.crosswise .square:nth-child(75) .dot, .crosswise .square:nth-child(75):before, .crosswise .square:nth-child(75):after {
+  background-color: #7000ff;
+}
+.crosswise .square:nth-child(76) {
+  left: 145px;
+  top: 203px;
+}
+.crosswise .square:nth-child(76) .dot, .crosswise .square:nth-child(76):before, .crosswise .square:nth-child(76):after {
+  background-color: #8000ff;
+}
+.crosswise .square:nth-child(77) {
+  left: 174px;
+  top: 203px;
+}
+.crosswise .square:nth-child(77) .dot, .crosswise .square:nth-child(77):before, .crosswise .square:nth-child(77):after {
+  background-color: #8f00ff;
+}
+.crosswise .square:nth-child(78) {
+  left: 203px;
+  top: 203px;
+}
+.crosswise .square:nth-child(78) .dot, .crosswise .square:nth-child(78):before, .crosswise .square:nth-child(78):after {
+  background-color: #9e00ff;
+}
+.crosswise .square:nth-child(79) {
+  left: 232px;
+  top: 203px;
+}
+.crosswise .square:nth-child(79) .dot, .crosswise .square:nth-child(79):before, .crosswise .square:nth-child(79):after {
+  background-color: #ad00ff;
+}
+.crosswise .square:nth-child(80) {
+  left: 261px;
+  top: 203px;
+}
+.crosswise .square:nth-child(80) .dot, .crosswise .square:nth-child(80):before, .crosswise .square:nth-child(80):after {
+  background-color: #bd00ff;
+}
+.crosswise .square:nth-child(81) {
+  left: 0px;
+  top: 232px;
+}
+.crosswise .square:nth-child(81) .dot, .crosswise .square:nth-child(81):before, .crosswise .square:nth-child(81):after {
+  background-color: #cc00ff;
+}
+.crosswise .square:nth-child(82) {
+  left: 29px;
+  top: 232px;
+}
+.crosswise .square:nth-child(82) .dot, .crosswise .square:nth-child(82):before, .crosswise .square:nth-child(82):after {
+  background-color: #db00ff;
+}
+.crosswise .square:nth-child(83) {
+  left: 58px;
+  top: 232px;
+}
+.crosswise .square:nth-child(83) .dot, .crosswise .square:nth-child(83):before, .crosswise .square:nth-child(83):after {
+  background-color: #eb00ff;
+}
+.crosswise .square:nth-child(84) {
+  left: 87px;
+  top: 232px;
+}
+.crosswise .square:nth-child(84) .dot, .crosswise .square:nth-child(84):before, .crosswise .square:nth-child(84):after {
+  background-color: #fa00ff;
+}
+.crosswise .square:nth-child(85) {
+  left: 116px;
+  top: 232px;
+}
+.crosswise .square:nth-child(85) .dot, .crosswise .square:nth-child(85):before, .crosswise .square:nth-child(85):after {
+  background-color: #ff00f5;
+}
+.crosswise .square:nth-child(86) {
+  left: 145px;
+  top: 232px;
+}
+.crosswise .square:nth-child(86) .dot, .crosswise .square:nth-child(86):before, .crosswise .square:nth-child(86):after {
+  background-color: #ff00e6;
+}
+.crosswise .square:nth-child(87) {
+  left: 174px;
+  top: 232px;
+}
+.crosswise .square:nth-child(87) .dot, .crosswise .square:nth-child(87):before, .crosswise .square:nth-child(87):after {
+  background-color: #ff00d6;
+}
+.crosswise .square:nth-child(88) {
+  left: 203px;
+  top: 232px;
+}
+.crosswise .square:nth-child(88) .dot, .crosswise .square:nth-child(88):before, .crosswise .square:nth-child(88):after {
+  background-color: #ff00c7;
+}
+.crosswise .square:nth-child(89) {
+  left: 232px;
+  top: 232px;
+}
+.crosswise .square:nth-child(89) .dot, .crosswise .square:nth-child(89):before, .crosswise .square:nth-child(89):after {
+  background-color: #ff00b8;
+}
+.crosswise .square:nth-child(90) {
+  left: 261px;
+  top: 232px;
+}
+.crosswise .square:nth-child(90) .dot, .crosswise .square:nth-child(90):before, .crosswise .square:nth-child(90):after {
+  background-color: #ff00a8;
+}
+.crosswise .square:nth-child(91) {
+  left: 0px;
+  top: 261px;
+}
+.crosswise .square:nth-child(91) .dot, .crosswise .square:nth-child(91):before, .crosswise .square:nth-child(91):after {
+  background-color: #ff0099;
+}
+.crosswise .square:nth-child(92) {
+  left: 29px;
+  top: 261px;
+}
+.crosswise .square:nth-child(92) .dot, .crosswise .square:nth-child(92):before, .crosswise .square:nth-child(92):after {
+  background-color: #ff008a;
+}
+.crosswise .square:nth-child(93) {
+  left: 58px;
+  top: 261px;
+}
+.crosswise .square:nth-child(93) .dot, .crosswise .square:nth-child(93):before, .crosswise .square:nth-child(93):after {
+  background-color: #ff007a;
+}
+.crosswise .square:nth-child(94) {
+  left: 87px;
+  top: 261px;
+}
+.crosswise .square:nth-child(94) .dot, .crosswise .square:nth-child(94):before, .crosswise .square:nth-child(94):after {
+  background-color: #ff006b;
+}
+.crosswise .square:nth-child(95) {
+  left: 116px;
+  top: 261px;
+}
+.crosswise .square:nth-child(95) .dot, .crosswise .square:nth-child(95):before, .crosswise .square:nth-child(95):after {
+  background-color: #ff005c;
+}
+.crosswise .square:nth-child(96) {
+  left: 145px;
+  top: 261px;
+}
+.crosswise .square:nth-child(96) .dot, .crosswise .square:nth-child(96):before, .crosswise .square:nth-child(96):after {
+  background-color: #ff004d;
+}
+.crosswise .square:nth-child(97) {
+  left: 174px;
+  top: 261px;
+}
+.crosswise .square:nth-child(97) .dot, .crosswise .square:nth-child(97):before, .crosswise .square:nth-child(97):after {
+  background-color: #ff003d;
+}
+.crosswise .square:nth-child(98) {
+  left: 203px;
+  top: 261px;
+}
+.crosswise .square:nth-child(98) .dot, .crosswise .square:nth-child(98):before, .crosswise .square:nth-child(98):after {
+  background-color: #ff002e;
+}
+.crosswise .square:nth-child(99) {
+  left: 232px;
+  top: 261px;
+}
+.crosswise .square:nth-child(99) .dot, .crosswise .square:nth-child(99):before, .crosswise .square:nth-child(99):after {
+  background-color: #ff001f;
+}
+.crosswise .square:nth-child(100) {
+  left: 261px;
+  top: 261px;
+}
+.crosswise .square:nth-child(100) .dot, .crosswise .square:nth-child(100):before, .crosswise .square:nth-child(100):after {
+  background-color: #ff000f;
+}
+
+@-webkit-keyframes crosswise {
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes crosswise {
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes AnimationSquare {
+  50% {
+    -webkit-transform: rotate(180deg) scale(8);
+            transform: rotate(180deg) scale(8);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes AnimationSquare {
+  50% {
+    -webkit-transform: rotate(180deg) scale(8);
+            transform: rotate(180deg) scale(8);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+            transform: rotate(360deg) scale(1);
+  }
+}

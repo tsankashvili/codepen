@@ -1,0 +1,83 @@
+/*variables*/
+$square: 35px;
+html,body{
+	width: 100%;height: 100%;
+}
+body{
+	background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+}
+.crosswise{
+  width: 250px;height: 250px;
+  position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  animation: 10s crosswise linear infinite;
+  .square{
+    width: $square; height: $square;
+    position: absolute;
+    animation: 1.5s -0.5s AnimationSquare linear infinite;
+    &:before,&:after{
+      content: "";
+      position: absolute;
+      width: $square*1.285; height: 2px;
+      z-index: 1;
+    }
+    &:before{
+      transform-origin: top left;
+      left: 2px; top: 1px;
+      transform: rotate(45deg);  
+    }
+    &:after{
+      transform-origin: bottom left;
+      left: 2px; bottom: 1px;
+      transform: rotate(-45deg);
+    }
+    .dot{
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 2;
+      &:nth-child(2){
+        right: 0;
+      }
+      &:nth-child(3){
+        bottom: 0; left: 0;
+      }
+      &:nth-child(4){
+        bottom: 0; right: 0;
+      }
+    }
+  }
+  $left: 0; $top: 0; $left-index:0;$top-index:0;
+  @for $i from 1 through 100{
+    .square:nth-child(#{$i}){
+      left: $left - $left-index*6px; 
+      top: $top - $top-index*6px;
+      .dot,&:before,&:after{
+        background-color: hsla(($i - 1)*360/100,100%,50%,1);
+      }
+    }
+    $left: $left + $square;
+    $left-index: $left-index + 1;
+    @if($i%10==0){
+      $left: 0px; $top: $top + $square;
+      $left-index: 0; $top-index: $top-index + 1;
+    }
+  }
+}
+@keyframes crosswise{
+  50%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+@keyframes AnimationSquare{
+  50%{
+    transform: rotate(180deg) scale(8);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
+}

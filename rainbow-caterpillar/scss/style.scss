@@ -1,0 +1,42 @@
+$caterpillar-count: 100;
+$speed: 1.75s;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *,*:after,*:before{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.caterpillar{
+  width: 100px;height: 100px;
+  animation: caterpillar-2 $speed linear infinite;
+  &:after{
+    content:"";
+    animation: $speed caterpillar linear infinite;
+    transform-origin: center right;
+    border-top: 5px transparent solid;
+    border-bottom: 5px transparent solid;
+    border-radius: 50%;
+  }
+  @for $i from 0 through $caterpillar-count{
+    &:nth-child(#{$i}){
+      transform: rotate($i * 360deg / $caterpillar-count) translate(120px);
+      animation-delay: -$i * ($speed * 2) / $caterpillar-count * 3;
+      &:after{
+        border-color: hsla($i * 360 / $caterpillar-count,100%,50%,1);  
+        box-shadow: hsla($i * 360 / $caterpillar-count,100%,50%,1) 0px 5px 0px;
+        animation-delay: -$i * ($speed * 3) / $caterpillar-count;
+      }
+    }
+  }
+}
+@keyframes caterpillar{
+  50%{ transform: rotate(180deg) translate(-120px);}
+}
+@keyframes caterpillar-2 {
+  50%{ width: 0px;height:0px;}
+}

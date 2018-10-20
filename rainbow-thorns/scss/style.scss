@@ -1,0 +1,54 @@
+$thorn-quantity: 20;
+$speed: 2.5s;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *,*:after{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.thorns{
+  @for $i from 1 through 5{ 
+    &:nth-child(#{$i}){
+      transform: scale($i * 1 / 5);
+    } 
+  } 
+  .thorn{
+    width: 225px;
+    height: 225px;
+    animation: $speed thorns ease-in-out infinite;
+    transform: scale(0);  
+    span{
+      animation: $speed * 2 dance linear infinite;
+      &:after{
+        content: '';
+        border-left: 30px groove;
+        border-right: 30px groove; 
+        border-radius: 50%;
+      }
+    }
+    @for $i from 0 through $thorn-quantity{
+      &:nth-child(#{$i}){
+        animation-delay: -$i * $speed / $thorn-quantity;
+        span:after{
+          transform: rotate($i * 360deg / $thorn-quantity) translate(300px);
+          border-color: hsla(360 - ($i * 360 / $thorn-quantity),100%,50%,1); 
+        }
+      }
+    }
+  }
+}
+@keyframes thorns {
+  40%{
+    transform: scale(1); 
+  }
+}
+@keyframes dance {
+  100%{
+    transform: rotate(360deg);
+  }
+}

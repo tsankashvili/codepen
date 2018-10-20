@@ -1,0 +1,233 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.circles .circle {
+  -webkit-animation: Claws 1.35s linear infinite;
+          animation: Claws 1.35s linear infinite;
+}
+.circles:nth-child(1) {
+  -webkit-transform: rotate(36deg) translate(150px);
+          transform: rotate(36deg) translate(150px);
+}
+.circles:nth-child(2) {
+  -webkit-transform: rotate(72deg) translate(150px);
+          transform: rotate(72deg) translate(150px);
+}
+.circles:nth-child(3) {
+  -webkit-transform: rotate(108deg) translate(150px);
+          transform: rotate(108deg) translate(150px);
+}
+.circles:nth-child(4) {
+  -webkit-transform: rotate(144deg) translate(150px);
+          transform: rotate(144deg) translate(150px);
+}
+.circles:nth-child(5) {
+  -webkit-transform: rotate(180deg) translate(150px);
+          transform: rotate(180deg) translate(150px);
+}
+.circles:nth-child(6) {
+  -webkit-transform: rotate(216deg) translate(150px);
+          transform: rotate(216deg) translate(150px);
+}
+.circles:nth-child(7) {
+  -webkit-transform: rotate(252deg) translate(150px);
+          transform: rotate(252deg) translate(150px);
+}
+.circles:nth-child(8) {
+  -webkit-transform: rotate(288deg) translate(150px);
+          transform: rotate(288deg) translate(150px);
+}
+.circles:nth-child(9) {
+  -webkit-transform: rotate(324deg) translate(150px);
+          transform: rotate(324deg) translate(150px);
+}
+.circles:nth-child(10) {
+  -webkit-transform: rotate(360deg) translate(150px);
+          transform: rotate(360deg) translate(150px);
+}
+.circles .claw {
+  width: 300px;
+  height: 150px;
+  border-right: 5px solid;
+  border-radius: 20%;
+}
+.circles .claw:nth-child(1) {
+  border-color: #ff0700;
+  -webkit-transform: scale(0.0333333333) rotate(12deg) translate(-300px);
+          transform: scale(0.0333333333) rotate(12deg) translate(-300px);
+}
+.circles .claw:nth-child(2) {
+  border-color: #ff0e00;
+  -webkit-transform: scale(0.0666666667) rotate(24deg) translate(-300px);
+          transform: scale(0.0666666667) rotate(24deg) translate(-300px);
+}
+.circles .claw:nth-child(3) {
+  border-color: #ff1500;
+  -webkit-transform: scale(0.1) rotate(36deg) translate(-300px);
+          transform: scale(0.1) rotate(36deg) translate(-300px);
+}
+.circles .claw:nth-child(4) {
+  border-color: #ff1c00;
+  -webkit-transform: scale(0.1333333333) rotate(48deg) translate(-300px);
+          transform: scale(0.1333333333) rotate(48deg) translate(-300px);
+}
+.circles .claw:nth-child(5) {
+  border-color: #ff2300;
+  -webkit-transform: scale(0.1666666667) rotate(60deg) translate(-300px);
+          transform: scale(0.1666666667) rotate(60deg) translate(-300px);
+}
+.circles .claw:nth-child(6) {
+  border-color: #ff2b00;
+  -webkit-transform: scale(0.2) rotate(72deg) translate(-300px);
+          transform: scale(0.2) rotate(72deg) translate(-300px);
+}
+.circles .claw:nth-child(7) {
+  border-color: #ff3200;
+  -webkit-transform: scale(0.2333333333) rotate(84deg) translate(-300px);
+          transform: scale(0.2333333333) rotate(84deg) translate(-300px);
+}
+.circles .claw:nth-child(8) {
+  border-color: #ff3900;
+  -webkit-transform: scale(0.2666666667) rotate(96deg) translate(-300px);
+          transform: scale(0.2666666667) rotate(96deg) translate(-300px);
+}
+.circles .claw:nth-child(9) {
+  border-color: #ff4000;
+  -webkit-transform: scale(0.3) rotate(108deg) translate(-300px);
+          transform: scale(0.3) rotate(108deg) translate(-300px);
+}
+.circles .claw:nth-child(10) {
+  border-color: #ff4700;
+  -webkit-transform: scale(0.3333333333) rotate(120deg) translate(-300px);
+          transform: scale(0.3333333333) rotate(120deg) translate(-300px);
+}
+.circles .claw:nth-child(11) {
+  border-color: #ff4e00;
+  -webkit-transform: scale(0.3666666667) rotate(132deg) translate(-300px);
+          transform: scale(0.3666666667) rotate(132deg) translate(-300px);
+}
+.circles .claw:nth-child(12) {
+  border-color: #ff5500;
+  -webkit-transform: scale(0.4) rotate(144deg) translate(-300px);
+          transform: scale(0.4) rotate(144deg) translate(-300px);
+}
+.circles .claw:nth-child(13) {
+  border-color: #ff5c00;
+  -webkit-transform: scale(0.4333333333) rotate(156deg) translate(-300px);
+          transform: scale(0.4333333333) rotate(156deg) translate(-300px);
+}
+.circles .claw:nth-child(14) {
+  border-color: #ff6300;
+  -webkit-transform: scale(0.4666666667) rotate(168deg) translate(-300px);
+          transform: scale(0.4666666667) rotate(168deg) translate(-300px);
+}
+.circles .claw:nth-child(15) {
+  border-color: #ff6a00;
+  -webkit-transform: scale(0.5) rotate(180deg) translate(-300px);
+          transform: scale(0.5) rotate(180deg) translate(-300px);
+}
+.circles .claw:nth-child(16) {
+  border-color: #ff7100;
+  -webkit-transform: scale(0.5333333333) rotate(192deg) translate(-300px);
+          transform: scale(0.5333333333) rotate(192deg) translate(-300px);
+}
+.circles .claw:nth-child(17) {
+  border-color: #ff7800;
+  -webkit-transform: scale(0.5666666667) rotate(204deg) translate(-300px);
+          transform: scale(0.5666666667) rotate(204deg) translate(-300px);
+}
+.circles .claw:nth-child(18) {
+  border-color: #ff8000;
+  -webkit-transform: scale(0.6) rotate(216deg) translate(-300px);
+          transform: scale(0.6) rotate(216deg) translate(-300px);
+}
+.circles .claw:nth-child(19) {
+  border-color: #ff8700;
+  -webkit-transform: scale(0.6333333333) rotate(228deg) translate(-300px);
+          transform: scale(0.6333333333) rotate(228deg) translate(-300px);
+}
+.circles .claw:nth-child(20) {
+  border-color: #ff8e00;
+  -webkit-transform: scale(0.6666666667) rotate(240deg) translate(-300px);
+          transform: scale(0.6666666667) rotate(240deg) translate(-300px);
+}
+.circles .claw:nth-child(21) {
+  border-color: #ff9500;
+  -webkit-transform: scale(0.7) rotate(252deg) translate(-300px);
+          transform: scale(0.7) rotate(252deg) translate(-300px);
+}
+.circles .claw:nth-child(22) {
+  border-color: #ff9c00;
+  -webkit-transform: scale(0.7333333333) rotate(264deg) translate(-300px);
+          transform: scale(0.7333333333) rotate(264deg) translate(-300px);
+}
+.circles .claw:nth-child(23) {
+  border-color: #ffa300;
+  -webkit-transform: scale(0.7666666667) rotate(276deg) translate(-300px);
+          transform: scale(0.7666666667) rotate(276deg) translate(-300px);
+}
+.circles .claw:nth-child(24) {
+  border-color: #ffaa00;
+  -webkit-transform: scale(0.8) rotate(288deg) translate(-300px);
+          transform: scale(0.8) rotate(288deg) translate(-300px);
+}
+.circles .claw:nth-child(25) {
+  border-color: #ffb100;
+  -webkit-transform: scale(0.8333333333) rotate(300deg) translate(-300px);
+          transform: scale(0.8333333333) rotate(300deg) translate(-300px);
+}
+.circles .claw:nth-child(26) {
+  border-color: #ffb800;
+  -webkit-transform: scale(0.8666666667) rotate(312deg) translate(-300px);
+          transform: scale(0.8666666667) rotate(312deg) translate(-300px);
+}
+.circles .claw:nth-child(27) {
+  border-color: #ffbf00;
+  -webkit-transform: scale(0.9) rotate(324deg) translate(-300px);
+          transform: scale(0.9) rotate(324deg) translate(-300px);
+}
+.circles .claw:nth-child(28) {
+  border-color: #ffc600;
+  -webkit-transform: scale(0.9333333333) rotate(336deg) translate(-300px);
+          transform: scale(0.9333333333) rotate(336deg) translate(-300px);
+}
+.circles .claw:nth-child(29) {
+  border-color: #ffcd00;
+  -webkit-transform: scale(0.9666666667) rotate(348deg) translate(-300px);
+          transform: scale(0.9666666667) rotate(348deg) translate(-300px);
+}
+.circles .claw:nth-child(30) {
+  border-color: #ffd500;
+  -webkit-transform: scale(1) rotate(360deg) translate(-300px);
+          transform: scale(1) rotate(360deg) translate(-300px);
+}
+
+@-webkit-keyframes Claws {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes Claws {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

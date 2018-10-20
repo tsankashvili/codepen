@@ -1,0 +1,43 @@
+/*variables*/
+$smallSquare: 28px;
+$squareColor: #00ff96;
+$swimmingSpeed: 1.5s;
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.square{
+  border: 2px solid $squareColor;
+  animation: 
+    SwimmingPyramid $swimmingSpeed linear infinite,
+    PyramidLight $swimmingSpeed linear infinite;
+  @for $i from 1 through 12{
+    &:nth-child(#{$i}){
+      width: $i*$smallSquare;
+      height: $i*$smallSquare;
+      animation-delay: -(12 - $i)*0.05s;
+    }
+  }
+}
+
+@keyframes PyramidLight{  
+  20%{
+    border-width: $smallSquare/2+2;
+  }
+  80%{
+    border-width: 2px;
+  }
+}
+@keyframes SwimmingPyramid{
+  100%{
+    transform: rotate(360deg); 
+  }
+}

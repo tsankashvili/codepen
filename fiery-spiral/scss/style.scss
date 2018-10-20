@@ -1,0 +1,46 @@
+html,body{width: 100%;height: 100%;}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *{position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;border-radius: 50%;}
+}
+$count: 15;
+$arc: $count * $count + $count * 5px;
+.container{
+  transform: scale(0.85);
+}
+.circles{
+  @for $i from 1 through 15{
+    $r: $i * 360 / 15;
+    &:nth-child(#{$i}){
+      transform: rotate(#{$r}deg) translate(50px);
+      animation: Adaptation-#{$i} 10s linear infinite;
+    }
+  }
+  .arc{
+    animation: FierySpiral 3s linear infinite;
+    @for $i from 1 through $count{
+      &:nth-child(#{$i}){
+        $d: $arc - $i * $count;
+        width: $d; height: $d;
+        animation-delay: -$i * 0.1s;
+        .circle{
+          border: 2px solid hsla($i * 50/$count,100%,50%,1);
+          box-shadow: hsla($i * 50/$count,100%,50%,1) 0px 0px 3px 1px;
+          width: $i * 10px;height: $i * 10px;
+          transform: translate(- $d / 2, 0px);
+        }
+      }
+    }
+  }
+}
+@keyframes FierySpiral {
+  100%{ transform: rotate(-360deg); }
+}
+@for $i from 1 through 15{
+  $r: $i*360/15;
+  @keyframes Adaptation-#{$i} {
+    50%{ transform: rotate(#{$r}deg) translate(250px); }
+  }
+} 

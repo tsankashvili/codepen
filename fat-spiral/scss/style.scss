@@ -1,0 +1,63 @@
+/*variables*/
+$spiral-count: 6;
+$spiral-color: #c11a37;
+$circles-count: 100;
+$circle-width: 100px;
+$circleAnimation: 1.5s;
+$circleSpeed: 1.5s;
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+html,body{
+  width: 100%;height: 100%;
+}
+@mixin absolute-center{
+  position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+}
+body{
+  background-color: #1c1c1e;
+  overflow: hidden;
+  *{
+    @include absolute-center();
+  }
+}
+.circles{
+  width: 300px;height: 300px;
+  animation: CircleAnimation $circleAnimation linear infinite;
+  .spiral{
+    @for $i from 1 through 6{
+      $r: $i*360/6;
+      &:nth-child(#{$i}){
+        transform: rotate(#{$r}deg) translate($circle-width);
+      }
+    }
+    .circle{
+      width: $circle-width;height: $circle-width;
+      transform: scale(0);
+      opacity: 0;
+      border: 2px solid $spiral-color;
+      border-radius: 50%;
+      animation: spiralAnimation $circleSpeed linear infinite;
+      @for $i from 1 through $circles-count{
+        $r: 180 - ($i - 1)*360/$circles-count;
+        $scale: $i*1/($circles-count/2);
+        &:nth-child(#{$i}){
+          transform: rotate(#{$r}deg) translate(100%) scale($scale);
+          animation-delay: -#{$i*(1/$circles-count)}s;
+        }
+      }
+    }
+  } 
+}
+@keyframes spiralAnimation{
+  5%,55%{
+    opacity: 1;
+  }
+  0%,60%{
+    opacity: 0;
+  }
+}
+@keyframes CircleAnimation{
+  100%{
+    transform: rotate(360deg);
+  }
+}

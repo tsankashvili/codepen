@@ -1,0 +1,54 @@
+$size: 150px;
+$circle-count: 50;
+$speed: 3s;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *,*:after,*:before{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.hexagon{
+  width: $size;
+  height: $size / 2;
+  &, span{
+    border-top-left-radius: $size;
+    border-bottom-right-radius: $size;
+  }
+  span{
+    animation: hexagon $speed linear infinite;
+    &:after,&:before{
+      content: '';
+      background-color: currentColor;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    &:before{
+      transform: translate($size / 2, -$size / 4);
+    }
+    &:after{
+      transform: translate(-$size / 2, $size / 4);
+    }    
+  }
+  @for $i from 1 through $circle-count{    
+    &:nth-child(#{$i}){
+      $color: $i * 360 / $circle-count;
+      transform: rotate(-$i * 360deg / $circle-count) translate($size + 100px);
+      color: hsla($color,100%,50%,1);
+      span{
+        animation-delay: -$i * $speed * 3 / $circle-count;
+        background-color: hsla($color,100%,50%,0.5);
+      }
+    }
+  }
+}
+@keyframes hexagon {
+  100%{
+    transform: rotate(360deg);
+  }
+}

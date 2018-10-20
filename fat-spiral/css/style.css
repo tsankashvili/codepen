@@ -1,0 +1,696 @@
+/*variables*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #1c1c1e;
+  overflow: hidden;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.circles {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: CircleAnimation 1.5s linear infinite;
+          animation: CircleAnimation 1.5s linear infinite;
+}
+.circles .spiral:nth-child(1) {
+  -webkit-transform: rotate(60deg) translate(100px);
+          transform: rotate(60deg) translate(100px);
+}
+.circles .spiral:nth-child(2) {
+  -webkit-transform: rotate(120deg) translate(100px);
+          transform: rotate(120deg) translate(100px);
+}
+.circles .spiral:nth-child(3) {
+  -webkit-transform: rotate(180deg) translate(100px);
+          transform: rotate(180deg) translate(100px);
+}
+.circles .spiral:nth-child(4) {
+  -webkit-transform: rotate(240deg) translate(100px);
+          transform: rotate(240deg) translate(100px);
+}
+.circles .spiral:nth-child(5) {
+  -webkit-transform: rotate(300deg) translate(100px);
+          transform: rotate(300deg) translate(100px);
+}
+.circles .spiral:nth-child(6) {
+  -webkit-transform: rotate(360deg) translate(100px);
+          transform: rotate(360deg) translate(100px);
+}
+.circles .spiral .circle {
+  width: 100px;
+  height: 100px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+  border: 2px solid #c11a37;
+  border-radius: 50%;
+  -webkit-animation: spiralAnimation 1.5s linear infinite;
+          animation: spiralAnimation 1.5s linear infinite;
+}
+.circles .spiral .circle:nth-child(1) {
+  -webkit-transform: rotate(180deg) translate(100%) scale(0.02);
+          transform: rotate(180deg) translate(100%) scale(0.02);
+  -webkit-animation-delay: -0.01s;
+          animation-delay: -0.01s;
+}
+.circles .spiral .circle:nth-child(2) {
+  -webkit-transform: rotate(176.4deg) translate(100%) scale(0.04);
+          transform: rotate(176.4deg) translate(100%) scale(0.04);
+  -webkit-animation-delay: -0.02s;
+          animation-delay: -0.02s;
+}
+.circles .spiral .circle:nth-child(3) {
+  -webkit-transform: rotate(172.8deg) translate(100%) scale(0.06);
+          transform: rotate(172.8deg) translate(100%) scale(0.06);
+  -webkit-animation-delay: -0.03s;
+          animation-delay: -0.03s;
+}
+.circles .spiral .circle:nth-child(4) {
+  -webkit-transform: rotate(169.2deg) translate(100%) scale(0.08);
+          transform: rotate(169.2deg) translate(100%) scale(0.08);
+  -webkit-animation-delay: -0.04s;
+          animation-delay: -0.04s;
+}
+.circles .spiral .circle:nth-child(5) {
+  -webkit-transform: rotate(165.6deg) translate(100%) scale(0.1);
+          transform: rotate(165.6deg) translate(100%) scale(0.1);
+  -webkit-animation-delay: -0.05s;
+          animation-delay: -0.05s;
+}
+.circles .spiral .circle:nth-child(6) {
+  -webkit-transform: rotate(162deg) translate(100%) scale(0.12);
+          transform: rotate(162deg) translate(100%) scale(0.12);
+  -webkit-animation-delay: -0.06s;
+          animation-delay: -0.06s;
+}
+.circles .spiral .circle:nth-child(7) {
+  -webkit-transform: rotate(158.4deg) translate(100%) scale(0.14);
+          transform: rotate(158.4deg) translate(100%) scale(0.14);
+  -webkit-animation-delay: -0.07s;
+          animation-delay: -0.07s;
+}
+.circles .spiral .circle:nth-child(8) {
+  -webkit-transform: rotate(154.8deg) translate(100%) scale(0.16);
+          transform: rotate(154.8deg) translate(100%) scale(0.16);
+  -webkit-animation-delay: -0.08s;
+          animation-delay: -0.08s;
+}
+.circles .spiral .circle:nth-child(9) {
+  -webkit-transform: rotate(151.2deg) translate(100%) scale(0.18);
+          transform: rotate(151.2deg) translate(100%) scale(0.18);
+  -webkit-animation-delay: -0.09s;
+          animation-delay: -0.09s;
+}
+.circles .spiral .circle:nth-child(10) {
+  -webkit-transform: rotate(147.6deg) translate(100%) scale(0.2);
+          transform: rotate(147.6deg) translate(100%) scale(0.2);
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+}
+.circles .spiral .circle:nth-child(11) {
+  -webkit-transform: rotate(144deg) translate(100%) scale(0.22);
+          transform: rotate(144deg) translate(100%) scale(0.22);
+  -webkit-animation-delay: -0.11s;
+          animation-delay: -0.11s;
+}
+.circles .spiral .circle:nth-child(12) {
+  -webkit-transform: rotate(140.4deg) translate(100%) scale(0.24);
+          transform: rotate(140.4deg) translate(100%) scale(0.24);
+  -webkit-animation-delay: -0.12s;
+          animation-delay: -0.12s;
+}
+.circles .spiral .circle:nth-child(13) {
+  -webkit-transform: rotate(136.8deg) translate(100%) scale(0.26);
+          transform: rotate(136.8deg) translate(100%) scale(0.26);
+  -webkit-animation-delay: -0.13s;
+          animation-delay: -0.13s;
+}
+.circles .spiral .circle:nth-child(14) {
+  -webkit-transform: rotate(133.2deg) translate(100%) scale(0.28);
+          transform: rotate(133.2deg) translate(100%) scale(0.28);
+  -webkit-animation-delay: -0.14s;
+          animation-delay: -0.14s;
+}
+.circles .spiral .circle:nth-child(15) {
+  -webkit-transform: rotate(129.6deg) translate(100%) scale(0.3);
+          transform: rotate(129.6deg) translate(100%) scale(0.3);
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+.circles .spiral .circle:nth-child(16) {
+  -webkit-transform: rotate(126deg) translate(100%) scale(0.32);
+          transform: rotate(126deg) translate(100%) scale(0.32);
+  -webkit-animation-delay: -0.16s;
+          animation-delay: -0.16s;
+}
+.circles .spiral .circle:nth-child(17) {
+  -webkit-transform: rotate(122.4deg) translate(100%) scale(0.34);
+          transform: rotate(122.4deg) translate(100%) scale(0.34);
+  -webkit-animation-delay: -0.17s;
+          animation-delay: -0.17s;
+}
+.circles .spiral .circle:nth-child(18) {
+  -webkit-transform: rotate(118.8deg) translate(100%) scale(0.36);
+          transform: rotate(118.8deg) translate(100%) scale(0.36);
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
+}
+.circles .spiral .circle:nth-child(19) {
+  -webkit-transform: rotate(115.2deg) translate(100%) scale(0.38);
+          transform: rotate(115.2deg) translate(100%) scale(0.38);
+  -webkit-animation-delay: -0.19s;
+          animation-delay: -0.19s;
+}
+.circles .spiral .circle:nth-child(20) {
+  -webkit-transform: rotate(111.6deg) translate(100%) scale(0.4);
+          transform: rotate(111.6deg) translate(100%) scale(0.4);
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+}
+.circles .spiral .circle:nth-child(21) {
+  -webkit-transform: rotate(108deg) translate(100%) scale(0.42);
+          transform: rotate(108deg) translate(100%) scale(0.42);
+  -webkit-animation-delay: -0.21s;
+          animation-delay: -0.21s;
+}
+.circles .spiral .circle:nth-child(22) {
+  -webkit-transform: rotate(104.4deg) translate(100%) scale(0.44);
+          transform: rotate(104.4deg) translate(100%) scale(0.44);
+  -webkit-animation-delay: -0.22s;
+          animation-delay: -0.22s;
+}
+.circles .spiral .circle:nth-child(23) {
+  -webkit-transform: rotate(100.8deg) translate(100%) scale(0.46);
+          transform: rotate(100.8deg) translate(100%) scale(0.46);
+  -webkit-animation-delay: -0.23s;
+          animation-delay: -0.23s;
+}
+.circles .spiral .circle:nth-child(24) {
+  -webkit-transform: rotate(97.2deg) translate(100%) scale(0.48);
+          transform: rotate(97.2deg) translate(100%) scale(0.48);
+  -webkit-animation-delay: -0.24s;
+          animation-delay: -0.24s;
+}
+.circles .spiral .circle:nth-child(25) {
+  -webkit-transform: rotate(93.6deg) translate(100%) scale(0.5);
+          transform: rotate(93.6deg) translate(100%) scale(0.5);
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+}
+.circles .spiral .circle:nth-child(26) {
+  -webkit-transform: rotate(90deg) translate(100%) scale(0.52);
+          transform: rotate(90deg) translate(100%) scale(0.52);
+  -webkit-animation-delay: -0.26s;
+          animation-delay: -0.26s;
+}
+.circles .spiral .circle:nth-child(27) {
+  -webkit-transform: rotate(86.4deg) translate(100%) scale(0.54);
+          transform: rotate(86.4deg) translate(100%) scale(0.54);
+  -webkit-animation-delay: -0.27s;
+          animation-delay: -0.27s;
+}
+.circles .spiral .circle:nth-child(28) {
+  -webkit-transform: rotate(82.8deg) translate(100%) scale(0.56);
+          transform: rotate(82.8deg) translate(100%) scale(0.56);
+  -webkit-animation-delay: -0.28s;
+          animation-delay: -0.28s;
+}
+.circles .spiral .circle:nth-child(29) {
+  -webkit-transform: rotate(79.2deg) translate(100%) scale(0.58);
+          transform: rotate(79.2deg) translate(100%) scale(0.58);
+  -webkit-animation-delay: -0.29s;
+          animation-delay: -0.29s;
+}
+.circles .spiral .circle:nth-child(30) {
+  -webkit-transform: rotate(75.6deg) translate(100%) scale(0.6);
+          transform: rotate(75.6deg) translate(100%) scale(0.6);
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+.circles .spiral .circle:nth-child(31) {
+  -webkit-transform: rotate(72deg) translate(100%) scale(0.62);
+          transform: rotate(72deg) translate(100%) scale(0.62);
+  -webkit-animation-delay: -0.31s;
+          animation-delay: -0.31s;
+}
+.circles .spiral .circle:nth-child(32) {
+  -webkit-transform: rotate(68.4deg) translate(100%) scale(0.64);
+          transform: rotate(68.4deg) translate(100%) scale(0.64);
+  -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+}
+.circles .spiral .circle:nth-child(33) {
+  -webkit-transform: rotate(64.8deg) translate(100%) scale(0.66);
+          transform: rotate(64.8deg) translate(100%) scale(0.66);
+  -webkit-animation-delay: -0.33s;
+          animation-delay: -0.33s;
+}
+.circles .spiral .circle:nth-child(34) {
+  -webkit-transform: rotate(61.2deg) translate(100%) scale(0.68);
+          transform: rotate(61.2deg) translate(100%) scale(0.68);
+  -webkit-animation-delay: -0.34s;
+          animation-delay: -0.34s;
+}
+.circles .spiral .circle:nth-child(35) {
+  -webkit-transform: rotate(57.6deg) translate(100%) scale(0.7);
+          transform: rotate(57.6deg) translate(100%) scale(0.7);
+  -webkit-animation-delay: -0.35s;
+          animation-delay: -0.35s;
+}
+.circles .spiral .circle:nth-child(36) {
+  -webkit-transform: rotate(54deg) translate(100%) scale(0.72);
+          transform: rotate(54deg) translate(100%) scale(0.72);
+  -webkit-animation-delay: -0.36s;
+          animation-delay: -0.36s;
+}
+.circles .spiral .circle:nth-child(37) {
+  -webkit-transform: rotate(50.4deg) translate(100%) scale(0.74);
+          transform: rotate(50.4deg) translate(100%) scale(0.74);
+  -webkit-animation-delay: -0.37s;
+          animation-delay: -0.37s;
+}
+.circles .spiral .circle:nth-child(38) {
+  -webkit-transform: rotate(46.8deg) translate(100%) scale(0.76);
+          transform: rotate(46.8deg) translate(100%) scale(0.76);
+  -webkit-animation-delay: -0.38s;
+          animation-delay: -0.38s;
+}
+.circles .spiral .circle:nth-child(39) {
+  -webkit-transform: rotate(43.2deg) translate(100%) scale(0.78);
+          transform: rotate(43.2deg) translate(100%) scale(0.78);
+  -webkit-animation-delay: -0.39s;
+          animation-delay: -0.39s;
+}
+.circles .spiral .circle:nth-child(40) {
+  -webkit-transform: rotate(39.6deg) translate(100%) scale(0.8);
+          transform: rotate(39.6deg) translate(100%) scale(0.8);
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+}
+.circles .spiral .circle:nth-child(41) {
+  -webkit-transform: rotate(36deg) translate(100%) scale(0.82);
+          transform: rotate(36deg) translate(100%) scale(0.82);
+  -webkit-animation-delay: -0.41s;
+          animation-delay: -0.41s;
+}
+.circles .spiral .circle:nth-child(42) {
+  -webkit-transform: rotate(32.4deg) translate(100%) scale(0.84);
+          transform: rotate(32.4deg) translate(100%) scale(0.84);
+  -webkit-animation-delay: -0.42s;
+          animation-delay: -0.42s;
+}
+.circles .spiral .circle:nth-child(43) {
+  -webkit-transform: rotate(28.8deg) translate(100%) scale(0.86);
+          transform: rotate(28.8deg) translate(100%) scale(0.86);
+  -webkit-animation-delay: -0.43s;
+          animation-delay: -0.43s;
+}
+.circles .spiral .circle:nth-child(44) {
+  -webkit-transform: rotate(25.2deg) translate(100%) scale(0.88);
+          transform: rotate(25.2deg) translate(100%) scale(0.88);
+  -webkit-animation-delay: -0.44s;
+          animation-delay: -0.44s;
+}
+.circles .spiral .circle:nth-child(45) {
+  -webkit-transform: rotate(21.6deg) translate(100%) scale(0.9);
+          transform: rotate(21.6deg) translate(100%) scale(0.9);
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+.circles .spiral .circle:nth-child(46) {
+  -webkit-transform: rotate(18deg) translate(100%) scale(0.92);
+          transform: rotate(18deg) translate(100%) scale(0.92);
+  -webkit-animation-delay: -0.46s;
+          animation-delay: -0.46s;
+}
+.circles .spiral .circle:nth-child(47) {
+  -webkit-transform: rotate(14.4deg) translate(100%) scale(0.94);
+          transform: rotate(14.4deg) translate(100%) scale(0.94);
+  -webkit-animation-delay: -0.47s;
+          animation-delay: -0.47s;
+}
+.circles .spiral .circle:nth-child(48) {
+  -webkit-transform: rotate(10.8deg) translate(100%) scale(0.96);
+          transform: rotate(10.8deg) translate(100%) scale(0.96);
+  -webkit-animation-delay: -0.48s;
+          animation-delay: -0.48s;
+}
+.circles .spiral .circle:nth-child(49) {
+  -webkit-transform: rotate(7.2deg) translate(100%) scale(0.98);
+          transform: rotate(7.2deg) translate(100%) scale(0.98);
+  -webkit-animation-delay: -0.49s;
+          animation-delay: -0.49s;
+}
+.circles .spiral .circle:nth-child(50) {
+  -webkit-transform: rotate(3.6deg) translate(100%) scale(1);
+          transform: rotate(3.6deg) translate(100%) scale(1);
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+.circles .spiral .circle:nth-child(51) {
+  -webkit-transform: rotate(0deg) translate(100%) scale(1.02);
+          transform: rotate(0deg) translate(100%) scale(1.02);
+  -webkit-animation-delay: -0.51s;
+          animation-delay: -0.51s;
+}
+.circles .spiral .circle:nth-child(52) {
+  -webkit-transform: rotate(-3.6deg) translate(100%) scale(1.04);
+          transform: rotate(-3.6deg) translate(100%) scale(1.04);
+  -webkit-animation-delay: -0.52s;
+          animation-delay: -0.52s;
+}
+.circles .spiral .circle:nth-child(53) {
+  -webkit-transform: rotate(-7.2deg) translate(100%) scale(1.06);
+          transform: rotate(-7.2deg) translate(100%) scale(1.06);
+  -webkit-animation-delay: -0.53s;
+          animation-delay: -0.53s;
+}
+.circles .spiral .circle:nth-child(54) {
+  -webkit-transform: rotate(-10.8deg) translate(100%) scale(1.08);
+          transform: rotate(-10.8deg) translate(100%) scale(1.08);
+  -webkit-animation-delay: -0.54s;
+          animation-delay: -0.54s;
+}
+.circles .spiral .circle:nth-child(55) {
+  -webkit-transform: rotate(-14.4deg) translate(100%) scale(1.1);
+          transform: rotate(-14.4deg) translate(100%) scale(1.1);
+  -webkit-animation-delay: -0.55s;
+          animation-delay: -0.55s;
+}
+.circles .spiral .circle:nth-child(56) {
+  -webkit-transform: rotate(-18deg) translate(100%) scale(1.12);
+          transform: rotate(-18deg) translate(100%) scale(1.12);
+  -webkit-animation-delay: -0.56s;
+          animation-delay: -0.56s;
+}
+.circles .spiral .circle:nth-child(57) {
+  -webkit-transform: rotate(-21.6deg) translate(100%) scale(1.14);
+          transform: rotate(-21.6deg) translate(100%) scale(1.14);
+  -webkit-animation-delay: -0.57s;
+          animation-delay: -0.57s;
+}
+.circles .spiral .circle:nth-child(58) {
+  -webkit-transform: rotate(-25.2deg) translate(100%) scale(1.16);
+          transform: rotate(-25.2deg) translate(100%) scale(1.16);
+  -webkit-animation-delay: -0.58s;
+          animation-delay: -0.58s;
+}
+.circles .spiral .circle:nth-child(59) {
+  -webkit-transform: rotate(-28.8deg) translate(100%) scale(1.18);
+          transform: rotate(-28.8deg) translate(100%) scale(1.18);
+  -webkit-animation-delay: -0.59s;
+          animation-delay: -0.59s;
+}
+.circles .spiral .circle:nth-child(60) {
+  -webkit-transform: rotate(-32.4deg) translate(100%) scale(1.2);
+          transform: rotate(-32.4deg) translate(100%) scale(1.2);
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+}
+.circles .spiral .circle:nth-child(61) {
+  -webkit-transform: rotate(-36deg) translate(100%) scale(1.22);
+          transform: rotate(-36deg) translate(100%) scale(1.22);
+  -webkit-animation-delay: -0.61s;
+          animation-delay: -0.61s;
+}
+.circles .spiral .circle:nth-child(62) {
+  -webkit-transform: rotate(-39.6deg) translate(100%) scale(1.24);
+          transform: rotate(-39.6deg) translate(100%) scale(1.24);
+  -webkit-animation-delay: -0.62s;
+          animation-delay: -0.62s;
+}
+.circles .spiral .circle:nth-child(63) {
+  -webkit-transform: rotate(-43.2deg) translate(100%) scale(1.26);
+          transform: rotate(-43.2deg) translate(100%) scale(1.26);
+  -webkit-animation-delay: -0.63s;
+          animation-delay: -0.63s;
+}
+.circles .spiral .circle:nth-child(64) {
+  -webkit-transform: rotate(-46.8deg) translate(100%) scale(1.28);
+          transform: rotate(-46.8deg) translate(100%) scale(1.28);
+  -webkit-animation-delay: -0.64s;
+          animation-delay: -0.64s;
+}
+.circles .spiral .circle:nth-child(65) {
+  -webkit-transform: rotate(-50.4deg) translate(100%) scale(1.3);
+          transform: rotate(-50.4deg) translate(100%) scale(1.3);
+  -webkit-animation-delay: -0.65s;
+          animation-delay: -0.65s;
+}
+.circles .spiral .circle:nth-child(66) {
+  -webkit-transform: rotate(-54deg) translate(100%) scale(1.32);
+          transform: rotate(-54deg) translate(100%) scale(1.32);
+  -webkit-animation-delay: -0.66s;
+          animation-delay: -0.66s;
+}
+.circles .spiral .circle:nth-child(67) {
+  -webkit-transform: rotate(-57.6deg) translate(100%) scale(1.34);
+          transform: rotate(-57.6deg) translate(100%) scale(1.34);
+  -webkit-animation-delay: -0.67s;
+          animation-delay: -0.67s;
+}
+.circles .spiral .circle:nth-child(68) {
+  -webkit-transform: rotate(-61.2deg) translate(100%) scale(1.36);
+          transform: rotate(-61.2deg) translate(100%) scale(1.36);
+  -webkit-animation-delay: -0.68s;
+          animation-delay: -0.68s;
+}
+.circles .spiral .circle:nth-child(69) {
+  -webkit-transform: rotate(-64.8deg) translate(100%) scale(1.38);
+          transform: rotate(-64.8deg) translate(100%) scale(1.38);
+  -webkit-animation-delay: -0.69s;
+          animation-delay: -0.69s;
+}
+.circles .spiral .circle:nth-child(70) {
+  -webkit-transform: rotate(-68.4deg) translate(100%) scale(1.4);
+          transform: rotate(-68.4deg) translate(100%) scale(1.4);
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+}
+.circles .spiral .circle:nth-child(71) {
+  -webkit-transform: rotate(-72deg) translate(100%) scale(1.42);
+          transform: rotate(-72deg) translate(100%) scale(1.42);
+  -webkit-animation-delay: -0.71s;
+          animation-delay: -0.71s;
+}
+.circles .spiral .circle:nth-child(72) {
+  -webkit-transform: rotate(-75.6deg) translate(100%) scale(1.44);
+          transform: rotate(-75.6deg) translate(100%) scale(1.44);
+  -webkit-animation-delay: -0.72s;
+          animation-delay: -0.72s;
+}
+.circles .spiral .circle:nth-child(73) {
+  -webkit-transform: rotate(-79.2deg) translate(100%) scale(1.46);
+          transform: rotate(-79.2deg) translate(100%) scale(1.46);
+  -webkit-animation-delay: -0.73s;
+          animation-delay: -0.73s;
+}
+.circles .spiral .circle:nth-child(74) {
+  -webkit-transform: rotate(-82.8deg) translate(100%) scale(1.48);
+          transform: rotate(-82.8deg) translate(100%) scale(1.48);
+  -webkit-animation-delay: -0.74s;
+          animation-delay: -0.74s;
+}
+.circles .spiral .circle:nth-child(75) {
+  -webkit-transform: rotate(-86.4deg) translate(100%) scale(1.5);
+          transform: rotate(-86.4deg) translate(100%) scale(1.5);
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+}
+.circles .spiral .circle:nth-child(76) {
+  -webkit-transform: rotate(-90deg) translate(100%) scale(1.52);
+          transform: rotate(-90deg) translate(100%) scale(1.52);
+  -webkit-animation-delay: -0.76s;
+          animation-delay: -0.76s;
+}
+.circles .spiral .circle:nth-child(77) {
+  -webkit-transform: rotate(-93.6deg) translate(100%) scale(1.54);
+          transform: rotate(-93.6deg) translate(100%) scale(1.54);
+  -webkit-animation-delay: -0.77s;
+          animation-delay: -0.77s;
+}
+.circles .spiral .circle:nth-child(78) {
+  -webkit-transform: rotate(-97.2deg) translate(100%) scale(1.56);
+          transform: rotate(-97.2deg) translate(100%) scale(1.56);
+  -webkit-animation-delay: -0.78s;
+          animation-delay: -0.78s;
+}
+.circles .spiral .circle:nth-child(79) {
+  -webkit-transform: rotate(-100.8deg) translate(100%) scale(1.58);
+          transform: rotate(-100.8deg) translate(100%) scale(1.58);
+  -webkit-animation-delay: -0.79s;
+          animation-delay: -0.79s;
+}
+.circles .spiral .circle:nth-child(80) {
+  -webkit-transform: rotate(-104.4deg) translate(100%) scale(1.6);
+          transform: rotate(-104.4deg) translate(100%) scale(1.6);
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+}
+.circles .spiral .circle:nth-child(81) {
+  -webkit-transform: rotate(-108deg) translate(100%) scale(1.62);
+          transform: rotate(-108deg) translate(100%) scale(1.62);
+  -webkit-animation-delay: -0.81s;
+          animation-delay: -0.81s;
+}
+.circles .spiral .circle:nth-child(82) {
+  -webkit-transform: rotate(-111.6deg) translate(100%) scale(1.64);
+          transform: rotate(-111.6deg) translate(100%) scale(1.64);
+  -webkit-animation-delay: -0.82s;
+          animation-delay: -0.82s;
+}
+.circles .spiral .circle:nth-child(83) {
+  -webkit-transform: rotate(-115.2deg) translate(100%) scale(1.66);
+          transform: rotate(-115.2deg) translate(100%) scale(1.66);
+  -webkit-animation-delay: -0.83s;
+          animation-delay: -0.83s;
+}
+.circles .spiral .circle:nth-child(84) {
+  -webkit-transform: rotate(-118.8deg) translate(100%) scale(1.68);
+          transform: rotate(-118.8deg) translate(100%) scale(1.68);
+  -webkit-animation-delay: -0.84s;
+          animation-delay: -0.84s;
+}
+.circles .spiral .circle:nth-child(85) {
+  -webkit-transform: rotate(-122.4deg) translate(100%) scale(1.7);
+          transform: rotate(-122.4deg) translate(100%) scale(1.7);
+  -webkit-animation-delay: -0.85s;
+          animation-delay: -0.85s;
+}
+.circles .spiral .circle:nth-child(86) {
+  -webkit-transform: rotate(-126deg) translate(100%) scale(1.72);
+          transform: rotate(-126deg) translate(100%) scale(1.72);
+  -webkit-animation-delay: -0.86s;
+          animation-delay: -0.86s;
+}
+.circles .spiral .circle:nth-child(87) {
+  -webkit-transform: rotate(-129.6deg) translate(100%) scale(1.74);
+          transform: rotate(-129.6deg) translate(100%) scale(1.74);
+  -webkit-animation-delay: -0.87s;
+          animation-delay: -0.87s;
+}
+.circles .spiral .circle:nth-child(88) {
+  -webkit-transform: rotate(-133.2deg) translate(100%) scale(1.76);
+          transform: rotate(-133.2deg) translate(100%) scale(1.76);
+  -webkit-animation-delay: -0.88s;
+          animation-delay: -0.88s;
+}
+.circles .spiral .circle:nth-child(89) {
+  -webkit-transform: rotate(-136.8deg) translate(100%) scale(1.78);
+          transform: rotate(-136.8deg) translate(100%) scale(1.78);
+  -webkit-animation-delay: -0.89s;
+          animation-delay: -0.89s;
+}
+.circles .spiral .circle:nth-child(90) {
+  -webkit-transform: rotate(-140.4deg) translate(100%) scale(1.8);
+          transform: rotate(-140.4deg) translate(100%) scale(1.8);
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+}
+.circles .spiral .circle:nth-child(91) {
+  -webkit-transform: rotate(-144deg) translate(100%) scale(1.82);
+          transform: rotate(-144deg) translate(100%) scale(1.82);
+  -webkit-animation-delay: -0.91s;
+          animation-delay: -0.91s;
+}
+.circles .spiral .circle:nth-child(92) {
+  -webkit-transform: rotate(-147.6deg) translate(100%) scale(1.84);
+          transform: rotate(-147.6deg) translate(100%) scale(1.84);
+  -webkit-animation-delay: -0.92s;
+          animation-delay: -0.92s;
+}
+.circles .spiral .circle:nth-child(93) {
+  -webkit-transform: rotate(-151.2deg) translate(100%) scale(1.86);
+          transform: rotate(-151.2deg) translate(100%) scale(1.86);
+  -webkit-animation-delay: -0.93s;
+          animation-delay: -0.93s;
+}
+.circles .spiral .circle:nth-child(94) {
+  -webkit-transform: rotate(-154.8deg) translate(100%) scale(1.88);
+          transform: rotate(-154.8deg) translate(100%) scale(1.88);
+  -webkit-animation-delay: -0.94s;
+          animation-delay: -0.94s;
+}
+.circles .spiral .circle:nth-child(95) {
+  -webkit-transform: rotate(-158.4deg) translate(100%) scale(1.9);
+          transform: rotate(-158.4deg) translate(100%) scale(1.9);
+  -webkit-animation-delay: -0.95s;
+          animation-delay: -0.95s;
+}
+.circles .spiral .circle:nth-child(96) {
+  -webkit-transform: rotate(-162deg) translate(100%) scale(1.92);
+          transform: rotate(-162deg) translate(100%) scale(1.92);
+  -webkit-animation-delay: -0.96s;
+          animation-delay: -0.96s;
+}
+.circles .spiral .circle:nth-child(97) {
+  -webkit-transform: rotate(-165.6deg) translate(100%) scale(1.94);
+          transform: rotate(-165.6deg) translate(100%) scale(1.94);
+  -webkit-animation-delay: -0.97s;
+          animation-delay: -0.97s;
+}
+.circles .spiral .circle:nth-child(98) {
+  -webkit-transform: rotate(-169.2deg) translate(100%) scale(1.96);
+          transform: rotate(-169.2deg) translate(100%) scale(1.96);
+  -webkit-animation-delay: -0.98s;
+          animation-delay: -0.98s;
+}
+.circles .spiral .circle:nth-child(99) {
+  -webkit-transform: rotate(-172.8deg) translate(100%) scale(1.98);
+          transform: rotate(-172.8deg) translate(100%) scale(1.98);
+  -webkit-animation-delay: -0.99s;
+          animation-delay: -0.99s;
+}
+.circles .spiral .circle:nth-child(100) {
+  -webkit-transform: rotate(-176.4deg) translate(100%) scale(2);
+          transform: rotate(-176.4deg) translate(100%) scale(2);
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+@-webkit-keyframes spiralAnimation {
+  5%,55% {
+    opacity: 1;
+  }
+  0%,60% {
+    opacity: 0;
+  }
+}
+
+@keyframes spiralAnimation {
+  5%,55% {
+    opacity: 1;
+  }
+  0%,60% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes CircleAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes CircleAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

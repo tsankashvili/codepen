@@ -1,0 +1,51 @@
+/*variables*/
+$circles-count: 24;
+$border-color: #fefefe;
+
+$bgCircle-diameter: 300px;
+$smCircle-diameter: 150px;
+
+$border: 3px;
+$circle-animation: 0.25;
+$speed: 2s;
+$rotate-circle: 4s;
+body{
+  background-color: #000;
+  overflow: hidden;
+  *{
+	position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+	border-radius: 50%;
+  }
+}
+.circles{
+	width: $bgCircle-diameter;
+	height: $bgCircle-diameter;
+	animation: rotateCircle $rotate-circle linear infinite;
+	.circle{
+		width: $smCircle-diameter; 
+		height: $smCircle-diameter;
+		border: $border solid transparent;
+		@for $i from 0 through $circles-count{
+			$r: $i*360/$circles-count;
+			$color: ($i - 1)*360/$circles-count;
+			&:nth-child(#{$i + 1}){
+				transform: rotate(#{$r}deg) translate($bgCircle-diameter/2) scale(0.3);
+				animation: wavesAnimation-#{$i} $speed #{(-$i - 1)*$circle-animation}s ease-in-out infinite;
+				border-color: hsla($color,100%,50%,1);
+			}
+		}		
+	}
+}
+@for $i from 0 through $circles-count{
+	$r: $i*360/$circles-count;
+	@keyframes wavesAnimation-#{$i}{
+		50%{
+			transform: rotate(#{$r}deg) translate($bgCircle-diameter/2) scale(1);
+		}
+	}
+}
+@keyframes rotateCircle{
+	100%{
+		transform: rotate(360deg);	
+	}
+}

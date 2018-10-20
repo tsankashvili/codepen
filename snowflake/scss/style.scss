@@ -1,0 +1,45 @@
+$snowflake-count: 8;
+$crystal-count: 50;
+$speed: 1s;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #110c1d;
+  overflow: hidden;
+  margin:0;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.snowflake{
+  animation: snowflake 5s linear infinite reverse;
+  .crystal{
+    @for $i from 0 through $snowflake-count{
+      &:nth-child(#{$i}){
+        transform: rotate($i * 360deg / $snowflake-count) translate(100px);
+      }
+    }
+    .ice{
+      width: 100px; height: 2px;
+      @for $i from 0 through $crystal-count{
+        &:nth-child(#{$i}){
+          transform: rotate($i * 360deg / 100) translate(100%);
+          i{
+            animation-delay: -$i * $speed / 20;
+            background-color: hsla(250 - ($i * 50 / $crystal-count),100%,50%,1);
+          }
+        }
+      }
+      i{ 
+        animation: snowflake $speed linear infinite; 
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@keyframes snowflake {
+  100%{
+    transform: rotate(-360deg);
+  }
+}

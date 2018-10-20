@@ -1,0 +1,95 @@
+//variables
+$speed: 2.5; //second
+$part-second: 0.25; //second
+$speed: $speed + $part-second*4;
+$animation-timing: ease-in-out;
+$logo-width: 180px;
+$dot-count: 5;
+$dot-width: $logo-width / 3;
+$rotateFinish: percentage(($speed - ($part-second*4))/$speed);
+$scaleFinish: $rotateFinish/2;
+$dot-positions: (
+   (120,-209,top,right),
+   (-161,-194,bottom,right),
+   (-161,-101,bottom,right),
+   (116,200,top,left),
+   (-161,214,bottom,left)
+);
+*{padding:0;margin:0;outline:0;border:0;box-sizing:border-box}
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+body{
+background: linear-gradient(45deg, #6fc7b5 0%,#13bdce 20%,#0094d9 40%,#5a3694 60%,#ee4d74 80%,#f58c58 100%);
+  background-size: 600%;
+  background-position: 0% 100%;
+  animation: gradient $speed*2s $animation-timing infinite;
+  position:absolute;
+  left: 0;
+}
+.loading{
+  *{position: absolute;left: 50%;top: 50%;transform: translate3d(-50%,-50%,0) rotate(0deg);}
+  width: 100%;height: 100%;
+  .logo{
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/440564/galleria-en.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: $logo-width;height: 100%;
+  }
+  .dots{
+    &.animate{
+      .dot{
+        animation: loading-block $speed*1s $animation-timing infinite;
+        &:after{
+          animation: loading-dot $speed*1s $animation-timing infinite;
+        }        
+      }
+    }
+    .dot{
+      width: 300px; height: 300px;
+      &:after{
+        content: "";
+        display: inline-block;
+        width: $dot-width; height: $dot-width;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        transform: scale(0.17);
+      }
+      @for $i from 1 through $dot-count{
+        &:nth-child(#{$i}){
+          top: #{nth(nth($dot-positions, $i) , 1)}px;
+          left: #{nth(nth($dot-positions, $i) , 2)}px;
+          animation-delay: ($i - 1) * $part-second*1s;
+          &:after{
+            transform-origin: #{nth(nth($dot-positions, $i) , 3)} #{nth(nth($dot-positions, $i) , 4)};
+            #{nth(nth($dot-positions, $i) , 3)}: 0;
+            #{nth(nth($dot-positions, $i) , 4)}: 0;
+            animation-delay: ($i - 1) * $part-second*1s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes loading-block{
+  #{$rotateFinish},100%{
+    transform: translate3d(-50%, -50%, 0) rotate(360deg);
+  }
+}
+@keyframes loading-dot{
+  0%,#{$rotateFinish},100%{
+    transform: scale(0.17);
+  }
+  #{$scaleFinish}{
+    transform: scale(1);
+  }
+}
+@keyframes gradient{
+  50%{
+    background-position: 100% 0%;
+  }
+}

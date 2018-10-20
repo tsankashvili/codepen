@@ -1,0 +1,34 @@
+html,body{ width: 100%;height: 100%; }
+body{
+  background-color: #140032;
+  margin:0;
+  overflow:hidden;
+  *{ position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto; }
+}
+.container{ animation: rotateContainer 2s linear infinite; }
+.flower{
+  animation: flower 5s ease-in-out infinite;
+  @for $i from 1 through 10{
+    &:nth-child(#{$i}){
+      transform: scale(#{$i * 0.1 }) rotate(360deg / 40 * $i);
+      animation-delay: - $i * 0.015s;
+    }
+  }
+  .dot{
+    width: 60px;height: 60px;
+    border-radius: 50%;
+    @for $i from 1 through 10{
+      &:nth-child(#{$i}){
+        background-color: hsla($i * 360 /10,100%,50%,1);
+        box-shadow: hsla($i * 360 / 10,100%,50%,1) 0px 0px 25px 2px;
+        transform: rotate($i * 360deg / 10) translate(240px);
+      }
+    }
+  }
+}
+@keyframes flower {
+  50%{ transform: scale(1) rotate(360deg); }
+}
+@keyframes rotateContainer {
+  100%{ transform: rotate(-360deg); }
+}

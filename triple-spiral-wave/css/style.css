@@ -1,0 +1,515 @@
+/*variables*/
+body {
+  background-color: #000;
+  overflow: hidden;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.circles {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: rotateCircle 4s linear infinite;
+          animation: rotateCircle 4s linear infinite;
+}
+.circles .circle {
+  width: 150px;
+  height: 150px;
+  border: 3px solid transparent;
+}
+.circles .circle:nth-child(1) {
+  -webkit-transform: rotate(0deg) translate(150px) scale(0.3);
+          transform: rotate(0deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-0 2s -0.25s ease-in-out infinite;
+          animation: wavesAnimation-0 2s -0.25s ease-in-out infinite;
+  border-color: #ff0040;
+}
+.circles .circle:nth-child(2) {
+  -webkit-transform: rotate(15deg) translate(150px) scale(0.3);
+          transform: rotate(15deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-1 2s -0.5s ease-in-out infinite;
+          animation: wavesAnimation-1 2s -0.5s ease-in-out infinite;
+  border-color: red;
+}
+.circles .circle:nth-child(3) {
+  -webkit-transform: rotate(30deg) translate(150px) scale(0.3);
+          transform: rotate(30deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-2 2s -0.75s ease-in-out infinite;
+          animation: wavesAnimation-2 2s -0.75s ease-in-out infinite;
+  border-color: #ff4000;
+}
+.circles .circle:nth-child(4) {
+  -webkit-transform: rotate(45deg) translate(150px) scale(0.3);
+          transform: rotate(45deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-3 2s -1s ease-in-out infinite;
+          animation: wavesAnimation-3 2s -1s ease-in-out infinite;
+  border-color: #ff8000;
+}
+.circles .circle:nth-child(5) {
+  -webkit-transform: rotate(60deg) translate(150px) scale(0.3);
+          transform: rotate(60deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-4 2s -1.25s ease-in-out infinite;
+          animation: wavesAnimation-4 2s -1.25s ease-in-out infinite;
+  border-color: #ffbf00;
+}
+.circles .circle:nth-child(6) {
+  -webkit-transform: rotate(75deg) translate(150px) scale(0.3);
+          transform: rotate(75deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-5 2s -1.5s ease-in-out infinite;
+          animation: wavesAnimation-5 2s -1.5s ease-in-out infinite;
+  border-color: yellow;
+}
+.circles .circle:nth-child(7) {
+  -webkit-transform: rotate(90deg) translate(150px) scale(0.3);
+          transform: rotate(90deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-6 2s -1.75s ease-in-out infinite;
+          animation: wavesAnimation-6 2s -1.75s ease-in-out infinite;
+  border-color: #bfff00;
+}
+.circles .circle:nth-child(8) {
+  -webkit-transform: rotate(105deg) translate(150px) scale(0.3);
+          transform: rotate(105deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-7 2s -2s ease-in-out infinite;
+          animation: wavesAnimation-7 2s -2s ease-in-out infinite;
+  border-color: #80ff00;
+}
+.circles .circle:nth-child(9) {
+  -webkit-transform: rotate(120deg) translate(150px) scale(0.3);
+          transform: rotate(120deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-8 2s -2.25s ease-in-out infinite;
+          animation: wavesAnimation-8 2s -2.25s ease-in-out infinite;
+  border-color: #40ff00;
+}
+.circles .circle:nth-child(10) {
+  -webkit-transform: rotate(135deg) translate(150px) scale(0.3);
+          transform: rotate(135deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-9 2s -2.5s ease-in-out infinite;
+          animation: wavesAnimation-9 2s -2.5s ease-in-out infinite;
+  border-color: lime;
+}
+.circles .circle:nth-child(11) {
+  -webkit-transform: rotate(150deg) translate(150px) scale(0.3);
+          transform: rotate(150deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-10 2s -2.75s ease-in-out infinite;
+          animation: wavesAnimation-10 2s -2.75s ease-in-out infinite;
+  border-color: #00ff40;
+}
+.circles .circle:nth-child(12) {
+  -webkit-transform: rotate(165deg) translate(150px) scale(0.3);
+          transform: rotate(165deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-11 2s -3s ease-in-out infinite;
+          animation: wavesAnimation-11 2s -3s ease-in-out infinite;
+  border-color: #00ff80;
+}
+.circles .circle:nth-child(13) {
+  -webkit-transform: rotate(180deg) translate(150px) scale(0.3);
+          transform: rotate(180deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-12 2s -3.25s ease-in-out infinite;
+          animation: wavesAnimation-12 2s -3.25s ease-in-out infinite;
+  border-color: #00ffbf;
+}
+.circles .circle:nth-child(14) {
+  -webkit-transform: rotate(195deg) translate(150px) scale(0.3);
+          transform: rotate(195deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-13 2s -3.5s ease-in-out infinite;
+          animation: wavesAnimation-13 2s -3.5s ease-in-out infinite;
+  border-color: cyan;
+}
+.circles .circle:nth-child(15) {
+  -webkit-transform: rotate(210deg) translate(150px) scale(0.3);
+          transform: rotate(210deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-14 2s -3.75s ease-in-out infinite;
+          animation: wavesAnimation-14 2s -3.75s ease-in-out infinite;
+  border-color: deepskyblue;
+}
+.circles .circle:nth-child(16) {
+  -webkit-transform: rotate(225deg) translate(150px) scale(0.3);
+          transform: rotate(225deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-15 2s -4s ease-in-out infinite;
+          animation: wavesAnimation-15 2s -4s ease-in-out infinite;
+  border-color: #0080ff;
+}
+.circles .circle:nth-child(17) {
+  -webkit-transform: rotate(240deg) translate(150px) scale(0.3);
+          transform: rotate(240deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-16 2s -4.25s ease-in-out infinite;
+          animation: wavesAnimation-16 2s -4.25s ease-in-out infinite;
+  border-color: #0040ff;
+}
+.circles .circle:nth-child(18) {
+  -webkit-transform: rotate(255deg) translate(150px) scale(0.3);
+          transform: rotate(255deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-17 2s -4.5s ease-in-out infinite;
+          animation: wavesAnimation-17 2s -4.5s ease-in-out infinite;
+  border-color: blue;
+}
+.circles .circle:nth-child(19) {
+  -webkit-transform: rotate(270deg) translate(150px) scale(0.3);
+          transform: rotate(270deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-18 2s -4.75s ease-in-out infinite;
+          animation: wavesAnimation-18 2s -4.75s ease-in-out infinite;
+  border-color: #4000ff;
+}
+.circles .circle:nth-child(20) {
+  -webkit-transform: rotate(285deg) translate(150px) scale(0.3);
+          transform: rotate(285deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-19 2s -5s ease-in-out infinite;
+          animation: wavesAnimation-19 2s -5s ease-in-out infinite;
+  border-color: #8000ff;
+}
+.circles .circle:nth-child(21) {
+  -webkit-transform: rotate(300deg) translate(150px) scale(0.3);
+          transform: rotate(300deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-20 2s -5.25s ease-in-out infinite;
+          animation: wavesAnimation-20 2s -5.25s ease-in-out infinite;
+  border-color: #bf00ff;
+}
+.circles .circle:nth-child(22) {
+  -webkit-transform: rotate(315deg) translate(150px) scale(0.3);
+          transform: rotate(315deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-21 2s -5.5s ease-in-out infinite;
+          animation: wavesAnimation-21 2s -5.5s ease-in-out infinite;
+  border-color: magenta;
+}
+.circles .circle:nth-child(23) {
+  -webkit-transform: rotate(330deg) translate(150px) scale(0.3);
+          transform: rotate(330deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-22 2s -5.75s ease-in-out infinite;
+          animation: wavesAnimation-22 2s -5.75s ease-in-out infinite;
+  border-color: #ff00bf;
+}
+.circles .circle:nth-child(24) {
+  -webkit-transform: rotate(345deg) translate(150px) scale(0.3);
+          transform: rotate(345deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-23 2s -6s ease-in-out infinite;
+          animation: wavesAnimation-23 2s -6s ease-in-out infinite;
+  border-color: #ff0080;
+}
+.circles .circle:nth-child(25) {
+  -webkit-transform: rotate(360deg) translate(150px) scale(0.3);
+          transform: rotate(360deg) translate(150px) scale(0.3);
+  -webkit-animation: wavesAnimation-24 2s -6.25s ease-in-out infinite;
+          animation: wavesAnimation-24 2s -6.25s ease-in-out infinite;
+  border-color: #ff0040;
+}
+
+@-webkit-keyframes wavesAnimation-0 {
+  50% {
+    -webkit-transform: rotate(0deg) translate(150px) scale(1);
+            transform: rotate(0deg) translate(150px) scale(1);
+  }
+}
+
+@keyframes wavesAnimation-0 {
+  50% {
+    -webkit-transform: rotate(0deg) translate(150px) scale(1);
+            transform: rotate(0deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-1 {
+  50% {
+    -webkit-transform: rotate(15deg) translate(150px) scale(1);
+            transform: rotate(15deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-1 {
+  50% {
+    -webkit-transform: rotate(15deg) translate(150px) scale(1);
+            transform: rotate(15deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-2 {
+  50% {
+    -webkit-transform: rotate(30deg) translate(150px) scale(1);
+            transform: rotate(30deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-2 {
+  50% {
+    -webkit-transform: rotate(30deg) translate(150px) scale(1);
+            transform: rotate(30deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-3 {
+  50% {
+    -webkit-transform: rotate(45deg) translate(150px) scale(1);
+            transform: rotate(45deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-3 {
+  50% {
+    -webkit-transform: rotate(45deg) translate(150px) scale(1);
+            transform: rotate(45deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-4 {
+  50% {
+    -webkit-transform: rotate(60deg) translate(150px) scale(1);
+            transform: rotate(60deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-4 {
+  50% {
+    -webkit-transform: rotate(60deg) translate(150px) scale(1);
+            transform: rotate(60deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-5 {
+  50% {
+    -webkit-transform: rotate(75deg) translate(150px) scale(1);
+            transform: rotate(75deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-5 {
+  50% {
+    -webkit-transform: rotate(75deg) translate(150px) scale(1);
+            transform: rotate(75deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-6 {
+  50% {
+    -webkit-transform: rotate(90deg) translate(150px) scale(1);
+            transform: rotate(90deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-6 {
+  50% {
+    -webkit-transform: rotate(90deg) translate(150px) scale(1);
+            transform: rotate(90deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-7 {
+  50% {
+    -webkit-transform: rotate(105deg) translate(150px) scale(1);
+            transform: rotate(105deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-7 {
+  50% {
+    -webkit-transform: rotate(105deg) translate(150px) scale(1);
+            transform: rotate(105deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-8 {
+  50% {
+    -webkit-transform: rotate(120deg) translate(150px) scale(1);
+            transform: rotate(120deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-8 {
+  50% {
+    -webkit-transform: rotate(120deg) translate(150px) scale(1);
+            transform: rotate(120deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-9 {
+  50% {
+    -webkit-transform: rotate(135deg) translate(150px) scale(1);
+            transform: rotate(135deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-9 {
+  50% {
+    -webkit-transform: rotate(135deg) translate(150px) scale(1);
+            transform: rotate(135deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-10 {
+  50% {
+    -webkit-transform: rotate(150deg) translate(150px) scale(1);
+            transform: rotate(150deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-10 {
+  50% {
+    -webkit-transform: rotate(150deg) translate(150px) scale(1);
+            transform: rotate(150deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-11 {
+  50% {
+    -webkit-transform: rotate(165deg) translate(150px) scale(1);
+            transform: rotate(165deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-11 {
+  50% {
+    -webkit-transform: rotate(165deg) translate(150px) scale(1);
+            transform: rotate(165deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-12 {
+  50% {
+    -webkit-transform: rotate(180deg) translate(150px) scale(1);
+            transform: rotate(180deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-12 {
+  50% {
+    -webkit-transform: rotate(180deg) translate(150px) scale(1);
+            transform: rotate(180deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-13 {
+  50% {
+    -webkit-transform: rotate(195deg) translate(150px) scale(1);
+            transform: rotate(195deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-13 {
+  50% {
+    -webkit-transform: rotate(195deg) translate(150px) scale(1);
+            transform: rotate(195deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-14 {
+  50% {
+    -webkit-transform: rotate(210deg) translate(150px) scale(1);
+            transform: rotate(210deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-14 {
+  50% {
+    -webkit-transform: rotate(210deg) translate(150px) scale(1);
+            transform: rotate(210deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-15 {
+  50% {
+    -webkit-transform: rotate(225deg) translate(150px) scale(1);
+            transform: rotate(225deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-15 {
+  50% {
+    -webkit-transform: rotate(225deg) translate(150px) scale(1);
+            transform: rotate(225deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-16 {
+  50% {
+    -webkit-transform: rotate(240deg) translate(150px) scale(1);
+            transform: rotate(240deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-16 {
+  50% {
+    -webkit-transform: rotate(240deg) translate(150px) scale(1);
+            transform: rotate(240deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-17 {
+  50% {
+    -webkit-transform: rotate(255deg) translate(150px) scale(1);
+            transform: rotate(255deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-17 {
+  50% {
+    -webkit-transform: rotate(255deg) translate(150px) scale(1);
+            transform: rotate(255deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-18 {
+  50% {
+    -webkit-transform: rotate(270deg) translate(150px) scale(1);
+            transform: rotate(270deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-18 {
+  50% {
+    -webkit-transform: rotate(270deg) translate(150px) scale(1);
+            transform: rotate(270deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-19 {
+  50% {
+    -webkit-transform: rotate(285deg) translate(150px) scale(1);
+            transform: rotate(285deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-19 {
+  50% {
+    -webkit-transform: rotate(285deg) translate(150px) scale(1);
+            transform: rotate(285deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-20 {
+  50% {
+    -webkit-transform: rotate(300deg) translate(150px) scale(1);
+            transform: rotate(300deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-20 {
+  50% {
+    -webkit-transform: rotate(300deg) translate(150px) scale(1);
+            transform: rotate(300deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-21 {
+  50% {
+    -webkit-transform: rotate(315deg) translate(150px) scale(1);
+            transform: rotate(315deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-21 {
+  50% {
+    -webkit-transform: rotate(315deg) translate(150px) scale(1);
+            transform: rotate(315deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-22 {
+  50% {
+    -webkit-transform: rotate(330deg) translate(150px) scale(1);
+            transform: rotate(330deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-22 {
+  50% {
+    -webkit-transform: rotate(330deg) translate(150px) scale(1);
+            transform: rotate(330deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-23 {
+  50% {
+    -webkit-transform: rotate(345deg) translate(150px) scale(1);
+            transform: rotate(345deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-23 {
+  50% {
+    -webkit-transform: rotate(345deg) translate(150px) scale(1);
+            transform: rotate(345deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes wavesAnimation-24 {
+  50% {
+    -webkit-transform: rotate(360deg) translate(150px) scale(1);
+            transform: rotate(360deg) translate(150px) scale(1);
+  }
+}
+@keyframes wavesAnimation-24 {
+  50% {
+    -webkit-transform: rotate(360deg) translate(150px) scale(1);
+            transform: rotate(360deg) translate(150px) scale(1);
+  }
+}
+@-webkit-keyframes rotateCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotateCircle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

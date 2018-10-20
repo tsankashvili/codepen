@@ -1,0 +1,67 @@
+/*variables*/
+$snakeColor: #0096ff;
+$snakeSpeed: 5.5s;
+$snake-d: 25px;
+$square-width: 150px;
+$squares-full: #{$square-width*2 + $square-width/3};
+*{padding: 0;margin: 0;box-sizing: border-box;}
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+}
+.squares{
+  width: #{$squares-full}; height: #{$squares-full};
+  transform-origin: center;
+  transform: rotate(45deg);
+  animation: squareAnimation 8s linear infinite;
+  position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  .square{
+    width: $square-width;height: $square-width;
+    position: absolute;
+    &:nth-child(2){
+      left: #{$square-width + $square-width/3};
+      transform: scale(-1,1);
+    }
+    &:nth-child(3){
+      top: #{$square-width + $square-width/3};
+      transform: scale(-1,1);
+    }
+    &:nth-child(4){
+      left: #{$square-width + $square-width/3};
+      top: #{$square-width + $square-width/3};
+    }    
+    .snake{
+      position: absolute;
+      top: 0;
+      width: $snake-d;height: $snake-d;
+      border-radius: 50%;
+      background-color: $snakeColor;
+      transform: translate(-#{$snake-d/2},-#{$snake-d/2}) scale(0);
+      animation: SnakeAnimation $snakeSpeed linear infinite;
+      @for $i from 1 through 18{
+        &:nth-child(#{$i}){
+          animation-delay: -#{$i*$snakeSpeed/18};
+        }
+      }
+    }
+  }
+}
+@keyframes SnakeAnimation{
+  25%{
+    transform: translate(#{$square-width - $snake-d/2},-$snake-d/2) scale(1);
+  }
+  50%{
+    transform: translate(#{$square-width - $snake-d/2},#{$square-width - $snake-d/2}) scale(0);
+  }
+  75%{
+    transform: translate(-#{$snake-d/2},#{$square-width - $snake-d/2}) scale(1);
+  }
+}
+@keyframes squareAnimation{ 
+  100%{
+    transform: rotate(405deg);
+  }
+}

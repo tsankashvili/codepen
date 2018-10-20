@@ -1,0 +1,50 @@
+$count-dots: 300; 
+$speed: 0.25s;
+$line: 10;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;border-radius: 50%;
+  }
+}
+.container{
+  animation: RotateCircle 15s linear infinite;  
+  transform-origin: center;
+  transform: rotate(0deg) scale(0.5);
+}
+.lines{
+  &:nth-child(2){
+    transform: rotate(180deg);
+    .line{
+      @for $i from 1 through $count-dots{
+        &:nth-child(#{$i}){
+          background-color: hsla(($count-dots - $i + 10) * 360 / $count-dots,100%,50%,1);
+          box-shadow: hsla(($count-dots - $i + 10) * 360 / $count-dots,100%,50%,1) 0px 0px 10px 1px;
+        }
+      }
+    }
+  }
+  .line{
+    width: 8px;height: 8px;
+    animation: ColoredLines $speed linear infinite;
+    @for $i from 1 through $count-dots{
+      &:nth-child(#{$i}){
+        transform: rotate(#{$i * 360 / $count-dots}deg) translate(500px);
+        background-color: hsla($i * 360 / $count-dots,100%,50%,1);
+        box-shadow: hsla($i * 360 / $count-dots,100%,50%,1) 0px 0px 10px 1px;
+        animation-delay: -$i * $speed /  $count-dots * $line;
+      }
+    }
+  }
+}
+@keyframes ColoredLines {
+  30%{ transform: scale(3) translate(100px);}
+}
+@keyframes RotateCircle {
+  100%{ transform: rotate(360deg) scale(0.5);}
+}

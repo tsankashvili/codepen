@@ -1,0 +1,179 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #140032;
+  margin: 0;
+  overflow: hidden;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.container {
+  -webkit-animation: rotateContainer 2s linear infinite;
+          animation: rotateContainer 2s linear infinite;
+}
+
+.flower {
+  -webkit-animation: flower 5s ease-in-out infinite;
+          animation: flower 5s ease-in-out infinite;
+}
+.flower:nth-child(1) {
+  -webkit-transform: scale(0.1) rotate(9deg);
+          transform: scale(0.1) rotate(9deg);
+  -webkit-animation-delay: -0.015s;
+          animation-delay: -0.015s;
+}
+.flower:nth-child(2) {
+  -webkit-transform: scale(0.2) rotate(18deg);
+          transform: scale(0.2) rotate(18deg);
+  -webkit-animation-delay: -0.03s;
+          animation-delay: -0.03s;
+}
+.flower:nth-child(3) {
+  -webkit-transform: scale(0.3) rotate(27deg);
+          transform: scale(0.3) rotate(27deg);
+  -webkit-animation-delay: -0.045s;
+          animation-delay: -0.045s;
+}
+.flower:nth-child(4) {
+  -webkit-transform: scale(0.4) rotate(36deg);
+          transform: scale(0.4) rotate(36deg);
+  -webkit-animation-delay: -0.06s;
+          animation-delay: -0.06s;
+}
+.flower:nth-child(5) {
+  -webkit-transform: scale(0.5) rotate(45deg);
+          transform: scale(0.5) rotate(45deg);
+  -webkit-animation-delay: -0.075s;
+          animation-delay: -0.075s;
+}
+.flower:nth-child(6) {
+  -webkit-transform: scale(0.6) rotate(54deg);
+          transform: scale(0.6) rotate(54deg);
+  -webkit-animation-delay: -0.09s;
+          animation-delay: -0.09s;
+}
+.flower:nth-child(7) {
+  -webkit-transform: scale(0.7) rotate(63deg);
+          transform: scale(0.7) rotate(63deg);
+  -webkit-animation-delay: -0.105s;
+          animation-delay: -0.105s;
+}
+.flower:nth-child(8) {
+  -webkit-transform: scale(0.8) rotate(72deg);
+          transform: scale(0.8) rotate(72deg);
+  -webkit-animation-delay: -0.12s;
+          animation-delay: -0.12s;
+}
+.flower:nth-child(9) {
+  -webkit-transform: scale(0.9) rotate(81deg);
+          transform: scale(0.9) rotate(81deg);
+  -webkit-animation-delay: -0.135s;
+          animation-delay: -0.135s;
+}
+.flower:nth-child(10) {
+  -webkit-transform: scale(1) rotate(90deg);
+          transform: scale(1) rotate(90deg);
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+.flower .dot {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.flower .dot:nth-child(1) {
+  background-color: #ff9900;
+  box-shadow: #ff9900 0px 0px 25px 2px;
+  -webkit-transform: rotate(36deg) translate(240px);
+          transform: rotate(36deg) translate(240px);
+}
+.flower .dot:nth-child(2) {
+  background-color: #ccff00;
+  box-shadow: #ccff00 0px 0px 25px 2px;
+  -webkit-transform: rotate(72deg) translate(240px);
+          transform: rotate(72deg) translate(240px);
+}
+.flower .dot:nth-child(3) {
+  background-color: #33ff00;
+  box-shadow: #33ff00 0px 0px 25px 2px;
+  -webkit-transform: rotate(108deg) translate(240px);
+          transform: rotate(108deg) translate(240px);
+}
+.flower .dot:nth-child(4) {
+  background-color: #00ff66;
+  box-shadow: #00ff66 0px 0px 25px 2px;
+  -webkit-transform: rotate(144deg) translate(240px);
+          transform: rotate(144deg) translate(240px);
+}
+.flower .dot:nth-child(5) {
+  background-color: cyan;
+  box-shadow: cyan 0px 0px 25px 2px;
+  -webkit-transform: rotate(180deg) translate(240px);
+          transform: rotate(180deg) translate(240px);
+}
+.flower .dot:nth-child(6) {
+  background-color: #0066ff;
+  box-shadow: #0066ff 0px 0px 25px 2px;
+  -webkit-transform: rotate(216deg) translate(240px);
+          transform: rotate(216deg) translate(240px);
+}
+.flower .dot:nth-child(7) {
+  background-color: #3300ff;
+  box-shadow: #3300ff 0px 0px 25px 2px;
+  -webkit-transform: rotate(252deg) translate(240px);
+          transform: rotate(252deg) translate(240px);
+}
+.flower .dot:nth-child(8) {
+  background-color: #cc00ff;
+  box-shadow: #cc00ff 0px 0px 25px 2px;
+  -webkit-transform: rotate(288deg) translate(240px);
+          transform: rotate(288deg) translate(240px);
+}
+.flower .dot:nth-child(9) {
+  background-color: #ff0099;
+  box-shadow: #ff0099 0px 0px 25px 2px;
+  -webkit-transform: rotate(324deg) translate(240px);
+          transform: rotate(324deg) translate(240px);
+}
+.flower .dot:nth-child(10) {
+  background-color: red;
+  box-shadow: red 0px 0px 25px 2px;
+  -webkit-transform: rotate(360deg) translate(240px);
+          transform: rotate(360deg) translate(240px);
+}
+
+@-webkit-keyframes flower {
+  50% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes flower {
+  50% {
+    -webkit-transform: scale(1) rotate(360deg);
+            transform: scale(1) rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateContainer {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes rotateContainer {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,1446 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.circles {
+  width: 300px;
+  height: 300px;
+  -webkit-animation: CirclesAnimation 10s linear infinite;
+          animation: CirclesAnimation 10s linear infinite;
+}
+.circles .circle {
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  mix-blend-mode: difference;
+}
+.circles .circle:nth-child(1) {
+  -webkit-transform: rotate(5.1428571429deg);
+          transform: rotate(5.1428571429deg);
+  -webkit-animation: Circle-1 5.1s linear infinite;
+          animation: Circle-1 5.1s linear infinite;
+  -webkit-animation-delay: -0.3642857143s;
+          animation-delay: -0.3642857143s;
+}
+.circles .circle:nth-child(2) {
+  -webkit-transform: rotate(10.2857142857deg);
+          transform: rotate(10.2857142857deg);
+  -webkit-animation: Circle-2 5.1s linear infinite;
+          animation: Circle-2 5.1s linear infinite;
+  -webkit-animation-delay: -0.7285714286s;
+          animation-delay: -0.7285714286s;
+}
+.circles .circle:nth-child(3) {
+  -webkit-transform: rotate(15.4285714286deg);
+          transform: rotate(15.4285714286deg);
+  -webkit-animation: Circle-3 5.1s linear infinite;
+          animation: Circle-3 5.1s linear infinite;
+  -webkit-animation-delay: -1.0928571429s;
+          animation-delay: -1.0928571429s;
+}
+.circles .circle:nth-child(4) {
+  -webkit-transform: rotate(20.5714285714deg);
+          transform: rotate(20.5714285714deg);
+  -webkit-animation: Circle-4 5.1s linear infinite;
+          animation: Circle-4 5.1s linear infinite;
+  -webkit-animation-delay: -1.4571428571s;
+          animation-delay: -1.4571428571s;
+}
+.circles .circle:nth-child(5) {
+  -webkit-transform: rotate(25.7142857143deg);
+          transform: rotate(25.7142857143deg);
+  -webkit-animation: Circle-5 5.1s linear infinite;
+          animation: Circle-5 5.1s linear infinite;
+  -webkit-animation-delay: -1.8214285714s;
+          animation-delay: -1.8214285714s;
+}
+.circles .circle:nth-child(6) {
+  -webkit-transform: rotate(30.8571428571deg);
+          transform: rotate(30.8571428571deg);
+  -webkit-animation: Circle-6 5.1s linear infinite;
+          animation: Circle-6 5.1s linear infinite;
+  -webkit-animation-delay: -2.1857142857s;
+          animation-delay: -2.1857142857s;
+}
+.circles .circle:nth-child(7) {
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+  -webkit-animation: Circle-7 5.1s linear infinite;
+          animation: Circle-7 5.1s linear infinite;
+  -webkit-animation-delay: -2.55s;
+          animation-delay: -2.55s;
+}
+.circles .circle:nth-child(8) {
+  -webkit-transform: rotate(41.1428571429deg);
+          transform: rotate(41.1428571429deg);
+  -webkit-animation: Circle-8 5.1s linear infinite;
+          animation: Circle-8 5.1s linear infinite;
+  -webkit-animation-delay: -2.9142857143s;
+          animation-delay: -2.9142857143s;
+}
+.circles .circle:nth-child(9) {
+  -webkit-transform: rotate(46.2857142857deg);
+          transform: rotate(46.2857142857deg);
+  -webkit-animation: Circle-9 5.1s linear infinite;
+          animation: Circle-9 5.1s linear infinite;
+  -webkit-animation-delay: -3.2785714286s;
+          animation-delay: -3.2785714286s;
+}
+.circles .circle:nth-child(10) {
+  -webkit-transform: rotate(51.4285714286deg);
+          transform: rotate(51.4285714286deg);
+  -webkit-animation: Circle-10 5.1s linear infinite;
+          animation: Circle-10 5.1s linear infinite;
+  -webkit-animation-delay: -3.6428571429s;
+          animation-delay: -3.6428571429s;
+}
+.circles .circle:nth-child(11) {
+  -webkit-transform: rotate(56.5714285714deg);
+          transform: rotate(56.5714285714deg);
+  -webkit-animation: Circle-11 5.1s linear infinite;
+          animation: Circle-11 5.1s linear infinite;
+  -webkit-animation-delay: -4.0071428571s;
+          animation-delay: -4.0071428571s;
+}
+.circles .circle:nth-child(12) {
+  -webkit-transform: rotate(61.7142857143deg);
+          transform: rotate(61.7142857143deg);
+  -webkit-animation: Circle-12 5.1s linear infinite;
+          animation: Circle-12 5.1s linear infinite;
+  -webkit-animation-delay: -4.3714285714s;
+          animation-delay: -4.3714285714s;
+}
+.circles .circle:nth-child(13) {
+  -webkit-transform: rotate(66.8571428571deg);
+          transform: rotate(66.8571428571deg);
+  -webkit-animation: Circle-13 5.1s linear infinite;
+          animation: Circle-13 5.1s linear infinite;
+  -webkit-animation-delay: -4.7357142857s;
+          animation-delay: -4.7357142857s;
+}
+.circles .circle:nth-child(14) {
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+  -webkit-animation: Circle-14 5.1s linear infinite;
+          animation: Circle-14 5.1s linear infinite;
+  -webkit-animation-delay: -5.1s;
+          animation-delay: -5.1s;
+}
+.circles .circle:nth-child(15) {
+  -webkit-transform: rotate(77.1428571429deg);
+          transform: rotate(77.1428571429deg);
+  -webkit-animation: Circle-15 5.1s linear infinite;
+          animation: Circle-15 5.1s linear infinite;
+  -webkit-animation-delay: -5.4642857143s;
+          animation-delay: -5.4642857143s;
+}
+.circles .circle:nth-child(16) {
+  -webkit-transform: rotate(82.2857142857deg);
+          transform: rotate(82.2857142857deg);
+  -webkit-animation: Circle-16 5.1s linear infinite;
+          animation: Circle-16 5.1s linear infinite;
+  -webkit-animation-delay: -5.8285714286s;
+          animation-delay: -5.8285714286s;
+}
+.circles .circle:nth-child(17) {
+  -webkit-transform: rotate(87.4285714286deg);
+          transform: rotate(87.4285714286deg);
+  -webkit-animation: Circle-17 5.1s linear infinite;
+          animation: Circle-17 5.1s linear infinite;
+  -webkit-animation-delay: -6.1928571429s;
+          animation-delay: -6.1928571429s;
+}
+.circles .circle:nth-child(18) {
+  -webkit-transform: rotate(92.5714285714deg);
+          transform: rotate(92.5714285714deg);
+  -webkit-animation: Circle-18 5.1s linear infinite;
+          animation: Circle-18 5.1s linear infinite;
+  -webkit-animation-delay: -6.5571428571s;
+          animation-delay: -6.5571428571s;
+}
+.circles .circle:nth-child(19) {
+  -webkit-transform: rotate(97.7142857143deg);
+          transform: rotate(97.7142857143deg);
+  -webkit-animation: Circle-19 5.1s linear infinite;
+          animation: Circle-19 5.1s linear infinite;
+  -webkit-animation-delay: -6.9214285714s;
+          animation-delay: -6.9214285714s;
+}
+.circles .circle:nth-child(20) {
+  -webkit-transform: rotate(102.8571428571deg);
+          transform: rotate(102.8571428571deg);
+  -webkit-animation: Circle-20 5.1s linear infinite;
+          animation: Circle-20 5.1s linear infinite;
+  -webkit-animation-delay: -7.2857142857s;
+          animation-delay: -7.2857142857s;
+}
+.circles .circle:nth-child(21) {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+  -webkit-animation: Circle-21 5.1s linear infinite;
+          animation: Circle-21 5.1s linear infinite;
+  -webkit-animation-delay: -7.65s;
+          animation-delay: -7.65s;
+}
+.circles .circle:nth-child(22) {
+  -webkit-transform: rotate(113.1428571429deg);
+          transform: rotate(113.1428571429deg);
+  -webkit-animation: Circle-22 5.1s linear infinite;
+          animation: Circle-22 5.1s linear infinite;
+  -webkit-animation-delay: -8.0142857143s;
+          animation-delay: -8.0142857143s;
+}
+.circles .circle:nth-child(23) {
+  -webkit-transform: rotate(118.2857142857deg);
+          transform: rotate(118.2857142857deg);
+  -webkit-animation: Circle-23 5.1s linear infinite;
+          animation: Circle-23 5.1s linear infinite;
+  -webkit-animation-delay: -8.3785714286s;
+          animation-delay: -8.3785714286s;
+}
+.circles .circle:nth-child(24) {
+  -webkit-transform: rotate(123.4285714286deg);
+          transform: rotate(123.4285714286deg);
+  -webkit-animation: Circle-24 5.1s linear infinite;
+          animation: Circle-24 5.1s linear infinite;
+  -webkit-animation-delay: -8.7428571429s;
+          animation-delay: -8.7428571429s;
+}
+.circles .circle:nth-child(25) {
+  -webkit-transform: rotate(128.5714285714deg);
+          transform: rotate(128.5714285714deg);
+  -webkit-animation: Circle-25 5.1s linear infinite;
+          animation: Circle-25 5.1s linear infinite;
+  -webkit-animation-delay: -9.1071428571s;
+          animation-delay: -9.1071428571s;
+}
+.circles .circle:nth-child(26) {
+  -webkit-transform: rotate(133.7142857143deg);
+          transform: rotate(133.7142857143deg);
+  -webkit-animation: Circle-26 5.1s linear infinite;
+          animation: Circle-26 5.1s linear infinite;
+  -webkit-animation-delay: -9.4714285714s;
+          animation-delay: -9.4714285714s;
+}
+.circles .circle:nth-child(27) {
+  -webkit-transform: rotate(138.8571428571deg);
+          transform: rotate(138.8571428571deg);
+  -webkit-animation: Circle-27 5.1s linear infinite;
+          animation: Circle-27 5.1s linear infinite;
+  -webkit-animation-delay: -9.8357142857s;
+          animation-delay: -9.8357142857s;
+}
+.circles .circle:nth-child(28) {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+  -webkit-animation: Circle-28 5.1s linear infinite;
+          animation: Circle-28 5.1s linear infinite;
+  -webkit-animation-delay: -10.2s;
+          animation-delay: -10.2s;
+}
+.circles .circle:nth-child(29) {
+  -webkit-transform: rotate(149.1428571429deg);
+          transform: rotate(149.1428571429deg);
+  -webkit-animation: Circle-29 5.1s linear infinite;
+          animation: Circle-29 5.1s linear infinite;
+  -webkit-animation-delay: -10.5642857143s;
+          animation-delay: -10.5642857143s;
+}
+.circles .circle:nth-child(30) {
+  -webkit-transform: rotate(154.2857142857deg);
+          transform: rotate(154.2857142857deg);
+  -webkit-animation: Circle-30 5.1s linear infinite;
+          animation: Circle-30 5.1s linear infinite;
+  -webkit-animation-delay: -10.9285714286s;
+          animation-delay: -10.9285714286s;
+}
+.circles .circle:nth-child(31) {
+  -webkit-transform: rotate(159.4285714286deg);
+          transform: rotate(159.4285714286deg);
+  -webkit-animation: Circle-31 5.1s linear infinite;
+          animation: Circle-31 5.1s linear infinite;
+  -webkit-animation-delay: -11.2928571429s;
+          animation-delay: -11.2928571429s;
+}
+.circles .circle:nth-child(32) {
+  -webkit-transform: rotate(164.5714285714deg);
+          transform: rotate(164.5714285714deg);
+  -webkit-animation: Circle-32 5.1s linear infinite;
+          animation: Circle-32 5.1s linear infinite;
+  -webkit-animation-delay: -11.6571428571s;
+          animation-delay: -11.6571428571s;
+}
+.circles .circle:nth-child(33) {
+  -webkit-transform: rotate(169.7142857143deg);
+          transform: rotate(169.7142857143deg);
+  -webkit-animation: Circle-33 5.1s linear infinite;
+          animation: Circle-33 5.1s linear infinite;
+  -webkit-animation-delay: -12.0214285714s;
+          animation-delay: -12.0214285714s;
+}
+.circles .circle:nth-child(34) {
+  -webkit-transform: rotate(174.8571428571deg);
+          transform: rotate(174.8571428571deg);
+  -webkit-animation: Circle-34 5.1s linear infinite;
+          animation: Circle-34 5.1s linear infinite;
+  -webkit-animation-delay: -12.3857142857s;
+          animation-delay: -12.3857142857s;
+}
+.circles .circle:nth-child(35) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation: Circle-35 5.1s linear infinite;
+          animation: Circle-35 5.1s linear infinite;
+  -webkit-animation-delay: -12.75s;
+          animation-delay: -12.75s;
+}
+.circles .circle:nth-child(36) {
+  -webkit-transform: rotate(185.1428571429deg);
+          transform: rotate(185.1428571429deg);
+  -webkit-animation: Circle-36 5.1s linear infinite;
+          animation: Circle-36 5.1s linear infinite;
+  -webkit-animation-delay: -13.1142857143s;
+          animation-delay: -13.1142857143s;
+}
+.circles .circle:nth-child(37) {
+  -webkit-transform: rotate(190.2857142857deg);
+          transform: rotate(190.2857142857deg);
+  -webkit-animation: Circle-37 5.1s linear infinite;
+          animation: Circle-37 5.1s linear infinite;
+  -webkit-animation-delay: -13.4785714286s;
+          animation-delay: -13.4785714286s;
+}
+.circles .circle:nth-child(38) {
+  -webkit-transform: rotate(195.4285714286deg);
+          transform: rotate(195.4285714286deg);
+  -webkit-animation: Circle-38 5.1s linear infinite;
+          animation: Circle-38 5.1s linear infinite;
+  -webkit-animation-delay: -13.8428571429s;
+          animation-delay: -13.8428571429s;
+}
+.circles .circle:nth-child(39) {
+  -webkit-transform: rotate(200.5714285714deg);
+          transform: rotate(200.5714285714deg);
+  -webkit-animation: Circle-39 5.1s linear infinite;
+          animation: Circle-39 5.1s linear infinite;
+  -webkit-animation-delay: -14.2071428571s;
+          animation-delay: -14.2071428571s;
+}
+.circles .circle:nth-child(40) {
+  -webkit-transform: rotate(205.7142857143deg);
+          transform: rotate(205.7142857143deg);
+  -webkit-animation: Circle-40 5.1s linear infinite;
+          animation: Circle-40 5.1s linear infinite;
+  -webkit-animation-delay: -14.5714285714s;
+          animation-delay: -14.5714285714s;
+}
+.circles .circle:nth-child(41) {
+  -webkit-transform: rotate(210.8571428571deg);
+          transform: rotate(210.8571428571deg);
+  -webkit-animation: Circle-41 5.1s linear infinite;
+          animation: Circle-41 5.1s linear infinite;
+  -webkit-animation-delay: -14.9357142857s;
+          animation-delay: -14.9357142857s;
+}
+.circles .circle:nth-child(42) {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+  -webkit-animation: Circle-42 5.1s linear infinite;
+          animation: Circle-42 5.1s linear infinite;
+  -webkit-animation-delay: -15.3s;
+          animation-delay: -15.3s;
+}
+.circles .circle:nth-child(43) {
+  -webkit-transform: rotate(221.1428571429deg);
+          transform: rotate(221.1428571429deg);
+  -webkit-animation: Circle-43 5.1s linear infinite;
+          animation: Circle-43 5.1s linear infinite;
+  -webkit-animation-delay: -15.6642857143s;
+          animation-delay: -15.6642857143s;
+}
+.circles .circle:nth-child(44) {
+  -webkit-transform: rotate(226.2857142857deg);
+          transform: rotate(226.2857142857deg);
+  -webkit-animation: Circle-44 5.1s linear infinite;
+          animation: Circle-44 5.1s linear infinite;
+  -webkit-animation-delay: -16.0285714286s;
+          animation-delay: -16.0285714286s;
+}
+.circles .circle:nth-child(45) {
+  -webkit-transform: rotate(231.4285714286deg);
+          transform: rotate(231.4285714286deg);
+  -webkit-animation: Circle-45 5.1s linear infinite;
+          animation: Circle-45 5.1s linear infinite;
+  -webkit-animation-delay: -16.3928571429s;
+          animation-delay: -16.3928571429s;
+}
+.circles .circle:nth-child(46) {
+  -webkit-transform: rotate(236.5714285714deg);
+          transform: rotate(236.5714285714deg);
+  -webkit-animation: Circle-46 5.1s linear infinite;
+          animation: Circle-46 5.1s linear infinite;
+  -webkit-animation-delay: -16.7571428571s;
+          animation-delay: -16.7571428571s;
+}
+.circles .circle:nth-child(47) {
+  -webkit-transform: rotate(241.7142857143deg);
+          transform: rotate(241.7142857143deg);
+  -webkit-animation: Circle-47 5.1s linear infinite;
+          animation: Circle-47 5.1s linear infinite;
+  -webkit-animation-delay: -17.1214285714s;
+          animation-delay: -17.1214285714s;
+}
+.circles .circle:nth-child(48) {
+  -webkit-transform: rotate(246.8571428571deg);
+          transform: rotate(246.8571428571deg);
+  -webkit-animation: Circle-48 5.1s linear infinite;
+          animation: Circle-48 5.1s linear infinite;
+  -webkit-animation-delay: -17.4857142857s;
+          animation-delay: -17.4857142857s;
+}
+.circles .circle:nth-child(49) {
+  -webkit-transform: rotate(252deg);
+          transform: rotate(252deg);
+  -webkit-animation: Circle-49 5.1s linear infinite;
+          animation: Circle-49 5.1s linear infinite;
+  -webkit-animation-delay: -17.85s;
+          animation-delay: -17.85s;
+}
+.circles .circle:nth-child(50) {
+  -webkit-transform: rotate(257.1428571429deg);
+          transform: rotate(257.1428571429deg);
+  -webkit-animation: Circle-50 5.1s linear infinite;
+          animation: Circle-50 5.1s linear infinite;
+  -webkit-animation-delay: -18.2142857143s;
+          animation-delay: -18.2142857143s;
+}
+.circles .circle:nth-child(51) {
+  -webkit-transform: rotate(262.2857142857deg);
+          transform: rotate(262.2857142857deg);
+  -webkit-animation: Circle-51 5.1s linear infinite;
+          animation: Circle-51 5.1s linear infinite;
+  -webkit-animation-delay: -18.5785714286s;
+          animation-delay: -18.5785714286s;
+}
+.circles .circle:nth-child(52) {
+  -webkit-transform: rotate(267.4285714286deg);
+          transform: rotate(267.4285714286deg);
+  -webkit-animation: Circle-52 5.1s linear infinite;
+          animation: Circle-52 5.1s linear infinite;
+  -webkit-animation-delay: -18.9428571429s;
+          animation-delay: -18.9428571429s;
+}
+.circles .circle:nth-child(53) {
+  -webkit-transform: rotate(272.5714285714deg);
+          transform: rotate(272.5714285714deg);
+  -webkit-animation: Circle-53 5.1s linear infinite;
+          animation: Circle-53 5.1s linear infinite;
+  -webkit-animation-delay: -19.3071428571s;
+          animation-delay: -19.3071428571s;
+}
+.circles .circle:nth-child(54) {
+  -webkit-transform: rotate(277.7142857143deg);
+          transform: rotate(277.7142857143deg);
+  -webkit-animation: Circle-54 5.1s linear infinite;
+          animation: Circle-54 5.1s linear infinite;
+  -webkit-animation-delay: -19.6714285714s;
+          animation-delay: -19.6714285714s;
+}
+.circles .circle:nth-child(55) {
+  -webkit-transform: rotate(282.8571428571deg);
+          transform: rotate(282.8571428571deg);
+  -webkit-animation: Circle-55 5.1s linear infinite;
+          animation: Circle-55 5.1s linear infinite;
+  -webkit-animation-delay: -20.0357142857s;
+          animation-delay: -20.0357142857s;
+}
+.circles .circle:nth-child(56) {
+  -webkit-transform: rotate(288deg);
+          transform: rotate(288deg);
+  -webkit-animation: Circle-56 5.1s linear infinite;
+          animation: Circle-56 5.1s linear infinite;
+  -webkit-animation-delay: -20.4s;
+          animation-delay: -20.4s;
+}
+.circles .circle:nth-child(57) {
+  -webkit-transform: rotate(293.1428571429deg);
+          transform: rotate(293.1428571429deg);
+  -webkit-animation: Circle-57 5.1s linear infinite;
+          animation: Circle-57 5.1s linear infinite;
+  -webkit-animation-delay: -20.7642857143s;
+          animation-delay: -20.7642857143s;
+}
+.circles .circle:nth-child(58) {
+  -webkit-transform: rotate(298.2857142857deg);
+          transform: rotate(298.2857142857deg);
+  -webkit-animation: Circle-58 5.1s linear infinite;
+          animation: Circle-58 5.1s linear infinite;
+  -webkit-animation-delay: -21.1285714286s;
+          animation-delay: -21.1285714286s;
+}
+.circles .circle:nth-child(59) {
+  -webkit-transform: rotate(303.4285714286deg);
+          transform: rotate(303.4285714286deg);
+  -webkit-animation: Circle-59 5.1s linear infinite;
+          animation: Circle-59 5.1s linear infinite;
+  -webkit-animation-delay: -21.4928571429s;
+          animation-delay: -21.4928571429s;
+}
+.circles .circle:nth-child(60) {
+  -webkit-transform: rotate(308.5714285714deg);
+          transform: rotate(308.5714285714deg);
+  -webkit-animation: Circle-60 5.1s linear infinite;
+          animation: Circle-60 5.1s linear infinite;
+  -webkit-animation-delay: -21.8571428571s;
+          animation-delay: -21.8571428571s;
+}
+.circles .circle:nth-child(61) {
+  -webkit-transform: rotate(313.7142857143deg);
+          transform: rotate(313.7142857143deg);
+  -webkit-animation: Circle-61 5.1s linear infinite;
+          animation: Circle-61 5.1s linear infinite;
+  -webkit-animation-delay: -22.2214285714s;
+          animation-delay: -22.2214285714s;
+}
+.circles .circle:nth-child(62) {
+  -webkit-transform: rotate(318.8571428571deg);
+          transform: rotate(318.8571428571deg);
+  -webkit-animation: Circle-62 5.1s linear infinite;
+          animation: Circle-62 5.1s linear infinite;
+  -webkit-animation-delay: -22.5857142857s;
+          animation-delay: -22.5857142857s;
+}
+.circles .circle:nth-child(63) {
+  -webkit-transform: rotate(324deg);
+          transform: rotate(324deg);
+  -webkit-animation: Circle-63 5.1s linear infinite;
+          animation: Circle-63 5.1s linear infinite;
+  -webkit-animation-delay: -22.95s;
+          animation-delay: -22.95s;
+}
+.circles .circle:nth-child(64) {
+  -webkit-transform: rotate(329.1428571429deg);
+          transform: rotate(329.1428571429deg);
+  -webkit-animation: Circle-64 5.1s linear infinite;
+          animation: Circle-64 5.1s linear infinite;
+  -webkit-animation-delay: -23.3142857143s;
+          animation-delay: -23.3142857143s;
+}
+.circles .circle:nth-child(65) {
+  -webkit-transform: rotate(334.2857142857deg);
+          transform: rotate(334.2857142857deg);
+  -webkit-animation: Circle-65 5.1s linear infinite;
+          animation: Circle-65 5.1s linear infinite;
+  -webkit-animation-delay: -23.6785714286s;
+          animation-delay: -23.6785714286s;
+}
+.circles .circle:nth-child(66) {
+  -webkit-transform: rotate(339.4285714286deg);
+          transform: rotate(339.4285714286deg);
+  -webkit-animation: Circle-66 5.1s linear infinite;
+          animation: Circle-66 5.1s linear infinite;
+  -webkit-animation-delay: -24.0428571429s;
+          animation-delay: -24.0428571429s;
+}
+.circles .circle:nth-child(67) {
+  -webkit-transform: rotate(344.5714285714deg);
+          transform: rotate(344.5714285714deg);
+  -webkit-animation: Circle-67 5.1s linear infinite;
+          animation: Circle-67 5.1s linear infinite;
+  -webkit-animation-delay: -24.4071428571s;
+          animation-delay: -24.4071428571s;
+}
+.circles .circle:nth-child(68) {
+  -webkit-transform: rotate(349.7142857143deg);
+          transform: rotate(349.7142857143deg);
+  -webkit-animation: Circle-68 5.1s linear infinite;
+          animation: Circle-68 5.1s linear infinite;
+  -webkit-animation-delay: -24.7714285714s;
+          animation-delay: -24.7714285714s;
+}
+.circles .circle:nth-child(69) {
+  -webkit-transform: rotate(354.8571428571deg);
+          transform: rotate(354.8571428571deg);
+  -webkit-animation: Circle-69 5.1s linear infinite;
+          animation: Circle-69 5.1s linear infinite;
+  -webkit-animation-delay: -25.1357142857s;
+          animation-delay: -25.1357142857s;
+}
+.circles .circle:nth-child(70) {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-animation: Circle-70 5.1s linear infinite;
+          animation: Circle-70 5.1s linear infinite;
+  -webkit-animation-delay: -25.5s;
+          animation-delay: -25.5s;
+}
+
+@-webkit-keyframes Circle-1 {
+  50% {
+    -webkit-transform: rotate(5.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(5.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+
+@keyframes Circle-1 {
+  50% {
+    -webkit-transform: rotate(5.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(5.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-2 {
+  50% {
+    -webkit-transform: rotate(10.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(10.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-2 {
+  50% {
+    -webkit-transform: rotate(10.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(10.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-3 {
+  50% {
+    -webkit-transform: rotate(15.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(15.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-3 {
+  50% {
+    -webkit-transform: rotate(15.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(15.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-4 {
+  50% {
+    -webkit-transform: rotate(20.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(20.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-4 {
+  50% {
+    -webkit-transform: rotate(20.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(20.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-5 {
+  50% {
+    -webkit-transform: rotate(25.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(25.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-5 {
+  50% {
+    -webkit-transform: rotate(25.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(25.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-6 {
+  50% {
+    -webkit-transform: rotate(30.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(30.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-6 {
+  50% {
+    -webkit-transform: rotate(30.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(30.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-7 {
+  50% {
+    -webkit-transform: rotate(36deg) translate(300px) scale(0.2);
+            transform: rotate(36deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-7 {
+  50% {
+    -webkit-transform: rotate(36deg) translate(300px) scale(0.2);
+            transform: rotate(36deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-8 {
+  50% {
+    -webkit-transform: rotate(41.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(41.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-8 {
+  50% {
+    -webkit-transform: rotate(41.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(41.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-9 {
+  50% {
+    -webkit-transform: rotate(46.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(46.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-9 {
+  50% {
+    -webkit-transform: rotate(46.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(46.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-10 {
+  50% {
+    -webkit-transform: rotate(51.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(51.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-10 {
+  50% {
+    -webkit-transform: rotate(51.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(51.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-11 {
+  50% {
+    -webkit-transform: rotate(56.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(56.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-11 {
+  50% {
+    -webkit-transform: rotate(56.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(56.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-12 {
+  50% {
+    -webkit-transform: rotate(61.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(61.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-12 {
+  50% {
+    -webkit-transform: rotate(61.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(61.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-13 {
+  50% {
+    -webkit-transform: rotate(66.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(66.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-13 {
+  50% {
+    -webkit-transform: rotate(66.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(66.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-14 {
+  50% {
+    -webkit-transform: rotate(72deg) translate(300px) scale(0.2);
+            transform: rotate(72deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-14 {
+  50% {
+    -webkit-transform: rotate(72deg) translate(300px) scale(0.2);
+            transform: rotate(72deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-15 {
+  50% {
+    -webkit-transform: rotate(77.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(77.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-15 {
+  50% {
+    -webkit-transform: rotate(77.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(77.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-16 {
+  50% {
+    -webkit-transform: rotate(82.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(82.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-16 {
+  50% {
+    -webkit-transform: rotate(82.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(82.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-17 {
+  50% {
+    -webkit-transform: rotate(87.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(87.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-17 {
+  50% {
+    -webkit-transform: rotate(87.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(87.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-18 {
+  50% {
+    -webkit-transform: rotate(92.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(92.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-18 {
+  50% {
+    -webkit-transform: rotate(92.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(92.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-19 {
+  50% {
+    -webkit-transform: rotate(97.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(97.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-19 {
+  50% {
+    -webkit-transform: rotate(97.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(97.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-20 {
+  50% {
+    -webkit-transform: rotate(102.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(102.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-20 {
+  50% {
+    -webkit-transform: rotate(102.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(102.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-21 {
+  50% {
+    -webkit-transform: rotate(108deg) translate(300px) scale(0.2);
+            transform: rotate(108deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-21 {
+  50% {
+    -webkit-transform: rotate(108deg) translate(300px) scale(0.2);
+            transform: rotate(108deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-22 {
+  50% {
+    -webkit-transform: rotate(113.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(113.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-22 {
+  50% {
+    -webkit-transform: rotate(113.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(113.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-23 {
+  50% {
+    -webkit-transform: rotate(118.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(118.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-23 {
+  50% {
+    -webkit-transform: rotate(118.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(118.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-24 {
+  50% {
+    -webkit-transform: rotate(123.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(123.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-24 {
+  50% {
+    -webkit-transform: rotate(123.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(123.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-25 {
+  50% {
+    -webkit-transform: rotate(128.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(128.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-25 {
+  50% {
+    -webkit-transform: rotate(128.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(128.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-26 {
+  50% {
+    -webkit-transform: rotate(133.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(133.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-26 {
+  50% {
+    -webkit-transform: rotate(133.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(133.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-27 {
+  50% {
+    -webkit-transform: rotate(138.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(138.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-27 {
+  50% {
+    -webkit-transform: rotate(138.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(138.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-28 {
+  50% {
+    -webkit-transform: rotate(144deg) translate(300px) scale(0.2);
+            transform: rotate(144deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-28 {
+  50% {
+    -webkit-transform: rotate(144deg) translate(300px) scale(0.2);
+            transform: rotate(144deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-29 {
+  50% {
+    -webkit-transform: rotate(149.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(149.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-29 {
+  50% {
+    -webkit-transform: rotate(149.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(149.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-30 {
+  50% {
+    -webkit-transform: rotate(154.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(154.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-30 {
+  50% {
+    -webkit-transform: rotate(154.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(154.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-31 {
+  50% {
+    -webkit-transform: rotate(159.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(159.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-31 {
+  50% {
+    -webkit-transform: rotate(159.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(159.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-32 {
+  50% {
+    -webkit-transform: rotate(164.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(164.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-32 {
+  50% {
+    -webkit-transform: rotate(164.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(164.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-33 {
+  50% {
+    -webkit-transform: rotate(169.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(169.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-33 {
+  50% {
+    -webkit-transform: rotate(169.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(169.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-34 {
+  50% {
+    -webkit-transform: rotate(174.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(174.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-34 {
+  50% {
+    -webkit-transform: rotate(174.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(174.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-35 {
+  50% {
+    -webkit-transform: rotate(180deg) translate(300px) scale(0.2);
+            transform: rotate(180deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-35 {
+  50% {
+    -webkit-transform: rotate(180deg) translate(300px) scale(0.2);
+            transform: rotate(180deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-36 {
+  50% {
+    -webkit-transform: rotate(185.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(185.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-36 {
+  50% {
+    -webkit-transform: rotate(185.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(185.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-37 {
+  50% {
+    -webkit-transform: rotate(190.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(190.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-37 {
+  50% {
+    -webkit-transform: rotate(190.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(190.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-38 {
+  50% {
+    -webkit-transform: rotate(195.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(195.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-38 {
+  50% {
+    -webkit-transform: rotate(195.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(195.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-39 {
+  50% {
+    -webkit-transform: rotate(200.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(200.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-39 {
+  50% {
+    -webkit-transform: rotate(200.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(200.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-40 {
+  50% {
+    -webkit-transform: rotate(205.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(205.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-40 {
+  50% {
+    -webkit-transform: rotate(205.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(205.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-41 {
+  50% {
+    -webkit-transform: rotate(210.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(210.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-41 {
+  50% {
+    -webkit-transform: rotate(210.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(210.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-42 {
+  50% {
+    -webkit-transform: rotate(216deg) translate(300px) scale(0.2);
+            transform: rotate(216deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-42 {
+  50% {
+    -webkit-transform: rotate(216deg) translate(300px) scale(0.2);
+            transform: rotate(216deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-43 {
+  50% {
+    -webkit-transform: rotate(221.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(221.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-43 {
+  50% {
+    -webkit-transform: rotate(221.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(221.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-44 {
+  50% {
+    -webkit-transform: rotate(226.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(226.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-44 {
+  50% {
+    -webkit-transform: rotate(226.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(226.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-45 {
+  50% {
+    -webkit-transform: rotate(231.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(231.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-45 {
+  50% {
+    -webkit-transform: rotate(231.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(231.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-46 {
+  50% {
+    -webkit-transform: rotate(236.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(236.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-46 {
+  50% {
+    -webkit-transform: rotate(236.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(236.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-47 {
+  50% {
+    -webkit-transform: rotate(241.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(241.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-47 {
+  50% {
+    -webkit-transform: rotate(241.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(241.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-48 {
+  50% {
+    -webkit-transform: rotate(246.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(246.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-48 {
+  50% {
+    -webkit-transform: rotate(246.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(246.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-49 {
+  50% {
+    -webkit-transform: rotate(252deg) translate(300px) scale(0.2);
+            transform: rotate(252deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-49 {
+  50% {
+    -webkit-transform: rotate(252deg) translate(300px) scale(0.2);
+            transform: rotate(252deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-50 {
+  50% {
+    -webkit-transform: rotate(257.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(257.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-50 {
+  50% {
+    -webkit-transform: rotate(257.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(257.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-51 {
+  50% {
+    -webkit-transform: rotate(262.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(262.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-51 {
+  50% {
+    -webkit-transform: rotate(262.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(262.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-52 {
+  50% {
+    -webkit-transform: rotate(267.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(267.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-52 {
+  50% {
+    -webkit-transform: rotate(267.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(267.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-53 {
+  50% {
+    -webkit-transform: rotate(272.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(272.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-53 {
+  50% {
+    -webkit-transform: rotate(272.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(272.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-54 {
+  50% {
+    -webkit-transform: rotate(277.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(277.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-54 {
+  50% {
+    -webkit-transform: rotate(277.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(277.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-55 {
+  50% {
+    -webkit-transform: rotate(282.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(282.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-55 {
+  50% {
+    -webkit-transform: rotate(282.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(282.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-56 {
+  50% {
+    -webkit-transform: rotate(288deg) translate(300px) scale(0.2);
+            transform: rotate(288deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-56 {
+  50% {
+    -webkit-transform: rotate(288deg) translate(300px) scale(0.2);
+            transform: rotate(288deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-57 {
+  50% {
+    -webkit-transform: rotate(293.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(293.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-57 {
+  50% {
+    -webkit-transform: rotate(293.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(293.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-58 {
+  50% {
+    -webkit-transform: rotate(298.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(298.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-58 {
+  50% {
+    -webkit-transform: rotate(298.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(298.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-59 {
+  50% {
+    -webkit-transform: rotate(303.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(303.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-59 {
+  50% {
+    -webkit-transform: rotate(303.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(303.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-60 {
+  50% {
+    -webkit-transform: rotate(308.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(308.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-60 {
+  50% {
+    -webkit-transform: rotate(308.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(308.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-61 {
+  50% {
+    -webkit-transform: rotate(313.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(313.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-61 {
+  50% {
+    -webkit-transform: rotate(313.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(313.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-62 {
+  50% {
+    -webkit-transform: rotate(318.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(318.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-62 {
+  50% {
+    -webkit-transform: rotate(318.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(318.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-63 {
+  50% {
+    -webkit-transform: rotate(324deg) translate(300px) scale(0.2);
+            transform: rotate(324deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-63 {
+  50% {
+    -webkit-transform: rotate(324deg) translate(300px) scale(0.2);
+            transform: rotate(324deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-64 {
+  50% {
+    -webkit-transform: rotate(329.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(329.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-64 {
+  50% {
+    -webkit-transform: rotate(329.1428571429deg) translate(300px) scale(0.2);
+            transform: rotate(329.1428571429deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-65 {
+  50% {
+    -webkit-transform: rotate(334.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(334.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-65 {
+  50% {
+    -webkit-transform: rotate(334.2857142857deg) translate(300px) scale(0.2);
+            transform: rotate(334.2857142857deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-66 {
+  50% {
+    -webkit-transform: rotate(339.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(339.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-66 {
+  50% {
+    -webkit-transform: rotate(339.4285714286deg) translate(300px) scale(0.2);
+            transform: rotate(339.4285714286deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-67 {
+  50% {
+    -webkit-transform: rotate(344.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(344.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-67 {
+  50% {
+    -webkit-transform: rotate(344.5714285714deg) translate(300px) scale(0.2);
+            transform: rotate(344.5714285714deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-68 {
+  50% {
+    -webkit-transform: rotate(349.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(349.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-68 {
+  50% {
+    -webkit-transform: rotate(349.7142857143deg) translate(300px) scale(0.2);
+            transform: rotate(349.7142857143deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-69 {
+  50% {
+    -webkit-transform: rotate(354.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(354.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-69 {
+  50% {
+    -webkit-transform: rotate(354.8571428571deg) translate(300px) scale(0.2);
+            transform: rotate(354.8571428571deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes Circle-70 {
+  50% {
+    -webkit-transform: rotate(360deg) translate(300px) scale(0.2);
+            transform: rotate(360deg) translate(300px) scale(0.2);
+  }
+}
+@keyframes Circle-70 {
+  50% {
+    -webkit-transform: rotate(360deg) translate(300px) scale(0.2);
+            transform: rotate(360deg) translate(300px) scale(0.2);
+  }
+}
+@-webkit-keyframes CirclesAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes CirclesAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

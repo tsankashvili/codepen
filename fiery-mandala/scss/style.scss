@@ -1,0 +1,40 @@
+$leaf-quantity: 15;
+$line-quantity: 15;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+  *{
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+  }
+}
+.flowers{
+  animation: 10s mandala linear infinite reverse;
+  .leaf{
+    @for $i from 0 through $leaf-quantity{
+      &:nth-child(#{$i}){
+        transform: translate(0px) rotate($i * 360deg / $leaf-quantity);
+      }
+    }
+    .line{
+      width: 100px; height: 2px;
+      animation: mandala 2s linear infinite;
+      @for $i from 0 through $line-quantity{
+        &:nth-child(#{$i + 1}){
+          top: $i * 50px;
+          background-color: hsla($i * 50 / $line-quantity,100%,50%,1);
+          box-shadow: hsla($i * 50 / $line-quantity,100%,50%,1) 100px 0px 3px 2px;
+          animation-delay: -$i * 1s / $line-quantity;
+        }
+      }
+    }
+  }
+}
+@keyframes mandala {
+  100%{
+    transform: rotate(-360deg);
+  }
+}

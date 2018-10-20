@@ -1,0 +1,187 @@
+/*variables*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #140032;
+  overflow: hidden;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.circles {
+  width: 400px;
+  height: 400px;
+  -webkit-animation: CircleAnimation 8s linear infinite;
+          animation: CircleAnimation 8s linear infinite;
+}
+.circles .circle {
+  position: absolute;
+}
+.circles .circle:nth-child(1) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.circles .circle:nth-child(2) {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+.circles .circle:nth-child(3) {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+.circles .circle:nth-child(4) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.circles .circle:nth-child(5) {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+.circles .circle:nth-child(6) {
+  -webkit-transform: rotate(300deg);
+          transform: rotate(300deg);
+}
+.circles .circle .balloon {
+  border-radius: 50%;
+  border: 10px solid #fac8c8;
+  -webkit-animation: balloonAnimation 1.5s linear infinite;
+          animation: balloonAnimation 1.5s linear infinite;
+}
+.circles .circle .balloon:nth-child(1) {
+  -webkit-animation-delay: -0.0038461538s;
+          animation-delay: -0.0038461538s;
+}
+.circles .circle .balloon:nth-child(2) {
+  -webkit-animation-delay: -0.1576923077s;
+          animation-delay: -0.1576923077s;
+}
+.circles .circle .balloon:nth-child(3) {
+  -webkit-animation-delay: -0.3115384615s;
+          animation-delay: -0.3115384615s;
+}
+.circles .circle .balloon:nth-child(4) {
+  -webkit-animation-delay: -0.4653846154s;
+          animation-delay: -0.4653846154s;
+}
+.circles .circle .balloon:nth-child(5) {
+  -webkit-animation-delay: -0.6192307692s;
+          animation-delay: -0.6192307692s;
+}
+.circles .circle .balloon:nth-child(6) {
+  -webkit-animation-delay: -0.7730769231s;
+          animation-delay: -0.7730769231s;
+}
+.circles .circle .balloon:nth-child(7) {
+  -webkit-animation-delay: -0.9269230769s;
+          animation-delay: -0.9269230769s;
+}
+.circles .circle .balloon:nth-child(8) {
+  -webkit-animation-delay: -1.0807692308s;
+          animation-delay: -1.0807692308s;
+}
+.circles .circle .balloon:nth-child(9) {
+  -webkit-animation-delay: -1.2346153846s;
+          animation-delay: -1.2346153846s;
+}
+.circles .circle .balloon:nth-child(10) {
+  -webkit-animation-delay: -1.3884615385s;
+          animation-delay: -1.3884615385s;
+}
+
+@-webkit-keyframes balloonAnimation {
+  40% {
+    -webkit-transform: translate(135px, -30px);
+            transform: translate(135px, -30px);
+  }
+  50% {
+    width: 75px;
+    height: 75px;
+    -webkit-transform: translate(150px, -50px);
+            transform: translate(150px, -50px);
+  }
+  60% {
+    opacity: 0.8;
+    -webkit-transform: translate(140px, -65px);
+            transform: translate(140px, -65px);
+  }
+  90% {
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translate(86px, -80px);
+            transform: translate(86px, -80px);
+  }
+  99.99999% {
+    opacity: 0;
+    -webkit-transform: translate(80px, -80px);
+            transform: translate(80px, -80px);
+  }
+  0%,100% {
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes balloonAnimation {
+  40% {
+    -webkit-transform: translate(135px, -30px);
+            transform: translate(135px, -30px);
+  }
+  50% {
+    width: 75px;
+    height: 75px;
+    -webkit-transform: translate(150px, -50px);
+            transform: translate(150px, -50px);
+  }
+  60% {
+    opacity: 0.8;
+    -webkit-transform: translate(140px, -65px);
+            transform: translate(140px, -65px);
+  }
+  90% {
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translate(86px, -80px);
+            transform: translate(86px, -80px);
+  }
+  99.99999% {
+    opacity: 0;
+    -webkit-transform: translate(80px, -80px);
+            transform: translate(80px, -80px);
+  }
+  0%,100% {
+    width: 0px;
+    height: 0px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes CircleAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes CircleAnimation {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

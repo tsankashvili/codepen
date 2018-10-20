@@ -1,0 +1,37 @@
+$square-quantity: 30;
+$speed: 4s;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.square{
+  animation: $speed claw ease-in-out infinite;
+  transform: scale(0.075) rotate(0);
+  i{
+    width: 500px; height: 250px;
+    border-left: 20px solid;
+    border-right: 20px solid;
+    border-radius: 25%;
+  }
+  @for $i from 1 through $square-quantity{
+    &:nth-child(#{$i}){
+      animation-delay: -($i * ($speed / 2) / $square-quantity);
+      i{
+        transform: rotate($i * 360deg / $square-quantity);
+        border-color: hsla(350 - ($i * 50 / $square-quantity),100%,50%,1);
+      }
+    }
+  }
+}
+@keyframes claw{
+  50%{
+    transform: scale(1) rotate(-360deg);
+  }
+}

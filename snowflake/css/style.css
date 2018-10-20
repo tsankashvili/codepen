@@ -1,0 +1,540 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #110c1d;
+  overflow: hidden;
+  margin: 0;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.snowflake {
+  animation: snowflake 5s linear infinite reverse;
+}
+.snowflake .crystal:nth-child(0) {
+  -webkit-transform: rotate(0deg) translate(100px);
+          transform: rotate(0deg) translate(100px);
+}
+.snowflake .crystal:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(100px);
+          transform: rotate(45deg) translate(100px);
+}
+.snowflake .crystal:nth-child(2) {
+  -webkit-transform: rotate(90deg) translate(100px);
+          transform: rotate(90deg) translate(100px);
+}
+.snowflake .crystal:nth-child(3) {
+  -webkit-transform: rotate(135deg) translate(100px);
+          transform: rotate(135deg) translate(100px);
+}
+.snowflake .crystal:nth-child(4) {
+  -webkit-transform: rotate(180deg) translate(100px);
+          transform: rotate(180deg) translate(100px);
+}
+.snowflake .crystal:nth-child(5) {
+  -webkit-transform: rotate(225deg) translate(100px);
+          transform: rotate(225deg) translate(100px);
+}
+.snowflake .crystal:nth-child(6) {
+  -webkit-transform: rotate(270deg) translate(100px);
+          transform: rotate(270deg) translate(100px);
+}
+.snowflake .crystal:nth-child(7) {
+  -webkit-transform: rotate(315deg) translate(100px);
+          transform: rotate(315deg) translate(100px);
+}
+.snowflake .crystal:nth-child(8) {
+  -webkit-transform: rotate(360deg) translate(100px);
+          transform: rotate(360deg) translate(100px);
+}
+.snowflake .crystal .ice {
+  width: 100px;
+  height: 2px;
+}
+.snowflake .crystal .ice:nth-child(0) {
+  -webkit-transform: rotate(0deg) translate(100%);
+          transform: rotate(0deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(0) i {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  background-color: #2b00ff;
+}
+.snowflake .crystal .ice:nth-child(1) {
+  -webkit-transform: rotate(3.6deg) translate(100%);
+          transform: rotate(3.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(1) i {
+  -webkit-animation-delay: -0.05s;
+          animation-delay: -0.05s;
+  background-color: #2600ff;
+}
+.snowflake .crystal .ice:nth-child(2) {
+  -webkit-transform: rotate(7.2deg) translate(100%);
+          transform: rotate(7.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(2) i {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  background-color: #2200ff;
+}
+.snowflake .crystal .ice:nth-child(3) {
+  -webkit-transform: rotate(10.8deg) translate(100%);
+          transform: rotate(10.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(3) i {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+  background-color: #1e00ff;
+}
+.snowflake .crystal .ice:nth-child(4) {
+  -webkit-transform: rotate(14.4deg) translate(100%);
+          transform: rotate(14.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(4) i {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
+  background-color: #1a00ff;
+}
+.snowflake .crystal .ice:nth-child(5) {
+  -webkit-transform: rotate(18deg) translate(100%);
+          transform: rotate(18deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(5) i {
+  -webkit-animation-delay: -0.25s;
+          animation-delay: -0.25s;
+  background-color: #1500ff;
+}
+.snowflake .crystal .ice:nth-child(6) {
+  -webkit-transform: rotate(21.6deg) translate(100%);
+          transform: rotate(21.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(6) i {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  background-color: #1100ff;
+}
+.snowflake .crystal .ice:nth-child(7) {
+  -webkit-transform: rotate(25.2deg) translate(100%);
+          transform: rotate(25.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(7) i {
+  -webkit-animation-delay: -0.35s;
+          animation-delay: -0.35s;
+  background-color: #0d00ff;
+}
+.snowflake .crystal .ice:nth-child(8) {
+  -webkit-transform: rotate(28.8deg) translate(100%);
+          transform: rotate(28.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(8) i {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  background-color: #0900ff;
+}
+.snowflake .crystal .ice:nth-child(9) {
+  -webkit-transform: rotate(32.4deg) translate(100%);
+          transform: rotate(32.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(9) i {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+  background-color: #0400ff;
+}
+.snowflake .crystal .ice:nth-child(10) {
+  -webkit-transform: rotate(36deg) translate(100%);
+          transform: rotate(36deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(10) i {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+  background-color: blue;
+}
+.snowflake .crystal .ice:nth-child(11) {
+  -webkit-transform: rotate(39.6deg) translate(100%);
+          transform: rotate(39.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(11) i {
+  -webkit-animation-delay: -0.55s;
+          animation-delay: -0.55s;
+  background-color: #0004ff;
+}
+.snowflake .crystal .ice:nth-child(12) {
+  -webkit-transform: rotate(43.2deg) translate(100%);
+          transform: rotate(43.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(12) i {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  background-color: #0009ff;
+}
+.snowflake .crystal .ice:nth-child(13) {
+  -webkit-transform: rotate(46.8deg) translate(100%);
+          transform: rotate(46.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(13) i {
+  -webkit-animation-delay: -0.65s;
+          animation-delay: -0.65s;
+  background-color: #000dff;
+}
+.snowflake .crystal .ice:nth-child(14) {
+  -webkit-transform: rotate(50.4deg) translate(100%);
+          transform: rotate(50.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(14) i {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
+  background-color: #0011ff;
+}
+.snowflake .crystal .ice:nth-child(15) {
+  -webkit-transform: rotate(54deg) translate(100%);
+          transform: rotate(54deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(15) i {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+  background-color: #0015ff;
+}
+.snowflake .crystal .ice:nth-child(16) {
+  -webkit-transform: rotate(57.6deg) translate(100%);
+          transform: rotate(57.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(16) i {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s;
+  background-color: #001aff;
+}
+.snowflake .crystal .ice:nth-child(17) {
+  -webkit-transform: rotate(61.2deg) translate(100%);
+          transform: rotate(61.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(17) i {
+  -webkit-animation-delay: -0.85s;
+          animation-delay: -0.85s;
+  background-color: #001eff;
+}
+.snowflake .crystal .ice:nth-child(18) {
+  -webkit-transform: rotate(64.8deg) translate(100%);
+          transform: rotate(64.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(18) i {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  background-color: #0022ff;
+}
+.snowflake .crystal .ice:nth-child(19) {
+  -webkit-transform: rotate(68.4deg) translate(100%);
+          transform: rotate(68.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(19) i {
+  -webkit-animation-delay: -0.95s;
+          animation-delay: -0.95s;
+  background-color: #0026ff;
+}
+.snowflake .crystal .ice:nth-child(20) {
+  -webkit-transform: rotate(72deg) translate(100%);
+          transform: rotate(72deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(20) i {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+  background-color: #002bff;
+}
+.snowflake .crystal .ice:nth-child(21) {
+  -webkit-transform: rotate(75.6deg) translate(100%);
+          transform: rotate(75.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(21) i {
+  -webkit-animation-delay: -1.05s;
+          animation-delay: -1.05s;
+  background-color: #002fff;
+}
+.snowflake .crystal .ice:nth-child(22) {
+  -webkit-transform: rotate(79.2deg) translate(100%);
+          transform: rotate(79.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(22) i {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s;
+  background-color: #0033ff;
+}
+.snowflake .crystal .ice:nth-child(23) {
+  -webkit-transform: rotate(82.8deg) translate(100%);
+          transform: rotate(82.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(23) i {
+  -webkit-animation-delay: -1.15s;
+          animation-delay: -1.15s;
+  background-color: #0037ff;
+}
+.snowflake .crystal .ice:nth-child(24) {
+  -webkit-transform: rotate(86.4deg) translate(100%);
+          transform: rotate(86.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(24) i {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  background-color: #003cff;
+}
+.snowflake .crystal .ice:nth-child(25) {
+  -webkit-transform: rotate(90deg) translate(100%);
+          transform: rotate(90deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(25) i {
+  -webkit-animation-delay: -1.25s;
+          animation-delay: -1.25s;
+  background-color: #0040ff;
+}
+.snowflake .crystal .ice:nth-child(26) {
+  -webkit-transform: rotate(93.6deg) translate(100%);
+          transform: rotate(93.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(26) i {
+  -webkit-animation-delay: -1.3s;
+          animation-delay: -1.3s;
+  background-color: #0044ff;
+}
+.snowflake .crystal .ice:nth-child(27) {
+  -webkit-transform: rotate(97.2deg) translate(100%);
+          transform: rotate(97.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(27) i {
+  -webkit-animation-delay: -1.35s;
+          animation-delay: -1.35s;
+  background-color: #0048ff;
+}
+.snowflake .crystal .ice:nth-child(28) {
+  -webkit-transform: rotate(100.8deg) translate(100%);
+          transform: rotate(100.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(28) i {
+  -webkit-animation-delay: -1.4s;
+          animation-delay: -1.4s;
+  background-color: #004dff;
+}
+.snowflake .crystal .ice:nth-child(29) {
+  -webkit-transform: rotate(104.4deg) translate(100%);
+          transform: rotate(104.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(29) i {
+  -webkit-animation-delay: -1.45s;
+          animation-delay: -1.45s;
+  background-color: #0051ff;
+}
+.snowflake .crystal .ice:nth-child(30) {
+  -webkit-transform: rotate(108deg) translate(100%);
+          transform: rotate(108deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(30) i {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  background-color: #0055ff;
+}
+.snowflake .crystal .ice:nth-child(31) {
+  -webkit-transform: rotate(111.6deg) translate(100%);
+          transform: rotate(111.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(31) i {
+  -webkit-animation-delay: -1.55s;
+          animation-delay: -1.55s;
+  background-color: #0059ff;
+}
+.snowflake .crystal .ice:nth-child(32) {
+  -webkit-transform: rotate(115.2deg) translate(100%);
+          transform: rotate(115.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(32) i {
+  -webkit-animation-delay: -1.6s;
+          animation-delay: -1.6s;
+  background-color: #005eff;
+}
+.snowflake .crystal .ice:nth-child(33) {
+  -webkit-transform: rotate(118.8deg) translate(100%);
+          transform: rotate(118.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(33) i {
+  -webkit-animation-delay: -1.65s;
+          animation-delay: -1.65s;
+  background-color: #0062ff;
+}
+.snowflake .crystal .ice:nth-child(34) {
+  -webkit-transform: rotate(122.4deg) translate(100%);
+          transform: rotate(122.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(34) i {
+  -webkit-animation-delay: -1.7s;
+          animation-delay: -1.7s;
+  background-color: #0066ff;
+}
+.snowflake .crystal .ice:nth-child(35) {
+  -webkit-transform: rotate(126deg) translate(100%);
+          transform: rotate(126deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(35) i {
+  -webkit-animation-delay: -1.75s;
+          animation-delay: -1.75s;
+  background-color: #006aff;
+}
+.snowflake .crystal .ice:nth-child(36) {
+  -webkit-transform: rotate(129.6deg) translate(100%);
+          transform: rotate(129.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(36) i {
+  -webkit-animation-delay: -1.8s;
+          animation-delay: -1.8s;
+  background-color: #006fff;
+}
+.snowflake .crystal .ice:nth-child(37) {
+  -webkit-transform: rotate(133.2deg) translate(100%);
+          transform: rotate(133.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(37) i {
+  -webkit-animation-delay: -1.85s;
+          animation-delay: -1.85s;
+  background-color: #0073ff;
+}
+.snowflake .crystal .ice:nth-child(38) {
+  -webkit-transform: rotate(136.8deg) translate(100%);
+          transform: rotate(136.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(38) i {
+  -webkit-animation-delay: -1.9s;
+          animation-delay: -1.9s;
+  background-color: #0077ff;
+}
+.snowflake .crystal .ice:nth-child(39) {
+  -webkit-transform: rotate(140.4deg) translate(100%);
+          transform: rotate(140.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(39) i {
+  -webkit-animation-delay: -1.95s;
+          animation-delay: -1.95s;
+  background-color: #007bff;
+}
+.snowflake .crystal .ice:nth-child(40) {
+  -webkit-transform: rotate(144deg) translate(100%);
+          transform: rotate(144deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(40) i {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  background-color: #0080ff;
+}
+.snowflake .crystal .ice:nth-child(41) {
+  -webkit-transform: rotate(147.6deg) translate(100%);
+          transform: rotate(147.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(41) i {
+  -webkit-animation-delay: -2.05s;
+          animation-delay: -2.05s;
+  background-color: #0084ff;
+}
+.snowflake .crystal .ice:nth-child(42) {
+  -webkit-transform: rotate(151.2deg) translate(100%);
+          transform: rotate(151.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(42) i {
+  -webkit-animation-delay: -2.1s;
+          animation-delay: -2.1s;
+  background-color: #0088ff;
+}
+.snowflake .crystal .ice:nth-child(43) {
+  -webkit-transform: rotate(154.8deg) translate(100%);
+          transform: rotate(154.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(43) i {
+  -webkit-animation-delay: -2.15s;
+          animation-delay: -2.15s;
+  background-color: #008cff;
+}
+.snowflake .crystal .ice:nth-child(44) {
+  -webkit-transform: rotate(158.4deg) translate(100%);
+          transform: rotate(158.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(44) i {
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  background-color: #0091ff;
+}
+.snowflake .crystal .ice:nth-child(45) {
+  -webkit-transform: rotate(162deg) translate(100%);
+          transform: rotate(162deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(45) i {
+  -webkit-animation-delay: -2.25s;
+          animation-delay: -2.25s;
+  background-color: #0095ff;
+}
+.snowflake .crystal .ice:nth-child(46) {
+  -webkit-transform: rotate(165.6deg) translate(100%);
+          transform: rotate(165.6deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(46) i {
+  -webkit-animation-delay: -2.3s;
+          animation-delay: -2.3s;
+  background-color: #0099ff;
+}
+.snowflake .crystal .ice:nth-child(47) {
+  -webkit-transform: rotate(169.2deg) translate(100%);
+          transform: rotate(169.2deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(47) i {
+  -webkit-animation-delay: -2.35s;
+          animation-delay: -2.35s;
+  background-color: #009dff;
+}
+.snowflake .crystal .ice:nth-child(48) {
+  -webkit-transform: rotate(172.8deg) translate(100%);
+          transform: rotate(172.8deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(48) i {
+  -webkit-animation-delay: -2.4s;
+          animation-delay: -2.4s;
+  background-color: #00a2ff;
+}
+.snowflake .crystal .ice:nth-child(49) {
+  -webkit-transform: rotate(176.4deg) translate(100%);
+          transform: rotate(176.4deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(49) i {
+  -webkit-animation-delay: -2.45s;
+          animation-delay: -2.45s;
+  background-color: #00a6ff;
+}
+.snowflake .crystal .ice:nth-child(50) {
+  -webkit-transform: rotate(180deg) translate(100%);
+          transform: rotate(180deg) translate(100%);
+}
+.snowflake .crystal .ice:nth-child(50) i {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+  background-color: #00aaff;
+}
+.snowflake .crystal .ice i {
+  -webkit-animation: snowflake 1s linear infinite;
+          animation: snowflake 1s linear infinite;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes snowflake {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes snowflake {
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
