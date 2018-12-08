@@ -1,0 +1,39 @@
+$speed: 1.5s;
+$line: 100;
+$leaf: 6;
+$width: 150px;
+
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  *{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.leaf{
+  @for $i from 0 through ($leaf - 1){
+    &:nth-child(#{$i + 1}){
+      transform: rotate($i * 360deg / $leaf) translate($width);
+    }
+  }
+  .line{
+    height: 20px;
+    animation: $speed flower ease-in-out infinite;
+    @for $i from 0 through ($line - 1){
+      &:nth-child(#{$i + 1}){
+        background-color: hsla($i * 50 / $line,100%,50%,0.2);
+        width: $width*2 - $i * $width / $line;
+        animation-delay: (-$i * $speed / $line) / 2;  
+      }
+    }
+  }
+}
+@keyframes flower {
+  50%{
+    transform: rotate(180deg);
+  }
+}
