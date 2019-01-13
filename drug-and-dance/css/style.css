@@ -1,0 +1,523 @@
+@charset "UTF-8";
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #230418;
+  overflow: hidden;
+  margin: 0;
+}
+body * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.💣:nth-child(1) {
+  -webkit-transform: translate3d(-150px, -150px, 0);
+          transform: translate3d(-150px, -150px, 0);
+}
+.💣:nth-child(2) {
+  -webkit-transform: translate3d(150px, -150px, 0) scale(-1, 1);
+          transform: translate3d(150px, -150px, 0) scale(-1, 1);
+}
+.💣:nth-child(3) {
+  -webkit-transform: translate3d(-150px, 150px, 0) scale(1, -1);
+          transform: translate3d(-150px, 150px, 0) scale(1, -1);
+}
+.💣:nth-child(4) {
+  -webkit-transform: translate3d(150px, 150px, 0) rotate(-180deg);
+          transform: translate3d(150px, 150px, 0) rotate(-180deg);
+}
+
+.💊 {
+  width: 200px;
+  height: 200px;
+}
+.💊:nth-child(0) {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.💊:nth-child(0) .🔥 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  border-color: red;
+}
+.💊:nth-child(1) {
+  -webkit-transform: scale(0.03);
+          transform: scale(0.03);
+}
+.💊:nth-child(1) .🔥 {
+  -webkit-animation-delay: -0.03s;
+          animation-delay: -0.03s;
+  border-color: #ff0400;
+}
+.💊:nth-child(2) {
+  -webkit-transform: scale(0.06);
+          transform: scale(0.06);
+}
+.💊:nth-child(2) .🔥 {
+  -webkit-animation-delay: -0.06s;
+          animation-delay: -0.06s;
+  border-color: #ff0900;
+}
+.💊:nth-child(3) {
+  -webkit-transform: scale(0.09);
+          transform: scale(0.09);
+}
+.💊:nth-child(3) .🔥 {
+  -webkit-animation-delay: -0.09s;
+          animation-delay: -0.09s;
+  border-color: #ff0d00;
+}
+.💊:nth-child(4) {
+  -webkit-transform: scale(0.12);
+          transform: scale(0.12);
+}
+.💊:nth-child(4) .🔥 {
+  -webkit-animation-delay: -0.12s;
+          animation-delay: -0.12s;
+  border-color: #ff1100;
+}
+.💊:nth-child(5) {
+  -webkit-transform: scale(0.15);
+          transform: scale(0.15);
+}
+.💊:nth-child(5) .🔥 {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+  border-color: #ff1500;
+}
+.💊:nth-child(6) {
+  -webkit-transform: scale(0.18);
+          transform: scale(0.18);
+}
+.💊:nth-child(6) .🔥 {
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
+  border-color: #ff1a00;
+}
+.💊:nth-child(7) {
+  -webkit-transform: scale(0.21);
+          transform: scale(0.21);
+}
+.💊:nth-child(7) .🔥 {
+  -webkit-animation-delay: -0.21s;
+          animation-delay: -0.21s;
+  border-color: #ff1e00;
+}
+.💊:nth-child(8) {
+  -webkit-transform: scale(0.24);
+          transform: scale(0.24);
+}
+.💊:nth-child(8) .🔥 {
+  -webkit-animation-delay: -0.24s;
+          animation-delay: -0.24s;
+  border-color: #ff2200;
+}
+.💊:nth-child(9) {
+  -webkit-transform: scale(0.27);
+          transform: scale(0.27);
+}
+.💊:nth-child(9) .🔥 {
+  -webkit-animation-delay: -0.27s;
+          animation-delay: -0.27s;
+  border-color: #ff2600;
+}
+.💊:nth-child(10) {
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+}
+.💊:nth-child(10) .🔥 {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+  border-color: #ff2b00;
+}
+.💊:nth-child(11) {
+  -webkit-transform: scale(0.33);
+          transform: scale(0.33);
+}
+.💊:nth-child(11) .🔥 {
+  -webkit-animation-delay: -0.33s;
+          animation-delay: -0.33s;
+  border-color: #ff2f00;
+}
+.💊:nth-child(12) {
+  -webkit-transform: scale(0.36);
+          transform: scale(0.36);
+}
+.💊:nth-child(12) .🔥 {
+  -webkit-animation-delay: -0.36s;
+          animation-delay: -0.36s;
+  border-color: #ff3300;
+}
+.💊:nth-child(13) {
+  -webkit-transform: scale(0.39);
+          transform: scale(0.39);
+}
+.💊:nth-child(13) .🔥 {
+  -webkit-animation-delay: -0.39s;
+          animation-delay: -0.39s;
+  border-color: #ff3700;
+}
+.💊:nth-child(14) {
+  -webkit-transform: scale(0.42);
+          transform: scale(0.42);
+}
+.💊:nth-child(14) .🔥 {
+  -webkit-animation-delay: -0.42s;
+          animation-delay: -0.42s;
+  border-color: #ff3c00;
+}
+.💊:nth-child(15) {
+  -webkit-transform: scale(0.45);
+          transform: scale(0.45);
+}
+.💊:nth-child(15) .🔥 {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+  border-color: #ff4000;
+}
+.💊:nth-child(16) {
+  -webkit-transform: scale(0.48);
+          transform: scale(0.48);
+}
+.💊:nth-child(16) .🔥 {
+  -webkit-animation-delay: -0.48s;
+          animation-delay: -0.48s;
+  border-color: #ff4400;
+}
+.💊:nth-child(17) {
+  -webkit-transform: scale(0.51);
+          transform: scale(0.51);
+}
+.💊:nth-child(17) .🔥 {
+  -webkit-animation-delay: -0.51s;
+          animation-delay: -0.51s;
+  border-color: #ff4800;
+}
+.💊:nth-child(18) {
+  -webkit-transform: scale(0.54);
+          transform: scale(0.54);
+}
+.💊:nth-child(18) .🔥 {
+  -webkit-animation-delay: -0.54s;
+          animation-delay: -0.54s;
+  border-color: #ff4d00;
+}
+.💊:nth-child(19) {
+  -webkit-transform: scale(0.57);
+          transform: scale(0.57);
+}
+.💊:nth-child(19) .🔥 {
+  -webkit-animation-delay: -0.57s;
+          animation-delay: -0.57s;
+  border-color: #ff5100;
+}
+.💊:nth-child(20) {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+}
+.💊:nth-child(20) .🔥 {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
+  border-color: #ff5500;
+}
+.💊:nth-child(21) {
+  -webkit-transform: scale(0.63);
+          transform: scale(0.63);
+}
+.💊:nth-child(21) .🔥 {
+  -webkit-animation-delay: -0.63s;
+          animation-delay: -0.63s;
+  border-color: #ff5900;
+}
+.💊:nth-child(22) {
+  -webkit-transform: scale(0.66);
+          transform: scale(0.66);
+}
+.💊:nth-child(22) .🔥 {
+  -webkit-animation-delay: -0.66s;
+          animation-delay: -0.66s;
+  border-color: #ff5e00;
+}
+.💊:nth-child(23) {
+  -webkit-transform: scale(0.69);
+          transform: scale(0.69);
+}
+.💊:nth-child(23) .🔥 {
+  -webkit-animation-delay: -0.69s;
+          animation-delay: -0.69s;
+  border-color: #ff6200;
+}
+.💊:nth-child(24) {
+  -webkit-transform: scale(0.72);
+          transform: scale(0.72);
+}
+.💊:nth-child(24) .🔥 {
+  -webkit-animation-delay: -0.72s;
+          animation-delay: -0.72s;
+  border-color: #ff6600;
+}
+.💊:nth-child(25) {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+}
+.💊:nth-child(25) .🔥 {
+  -webkit-animation-delay: -0.75s;
+          animation-delay: -0.75s;
+  border-color: #ff6a00;
+}
+.💊:nth-child(26) {
+  -webkit-transform: scale(0.78);
+          transform: scale(0.78);
+}
+.💊:nth-child(26) .🔥 {
+  -webkit-animation-delay: -0.78s;
+          animation-delay: -0.78s;
+  border-color: #ff6f00;
+}
+.💊:nth-child(27) {
+  -webkit-transform: scale(0.81);
+          transform: scale(0.81);
+}
+.💊:nth-child(27) .🔥 {
+  -webkit-animation-delay: -0.81s;
+          animation-delay: -0.81s;
+  border-color: #ff7300;
+}
+.💊:nth-child(28) {
+  -webkit-transform: scale(0.84);
+          transform: scale(0.84);
+}
+.💊:nth-child(28) .🔥 {
+  -webkit-animation-delay: -0.84s;
+          animation-delay: -0.84s;
+  border-color: #ff7700;
+}
+.💊:nth-child(29) {
+  -webkit-transform: scale(0.87);
+          transform: scale(0.87);
+}
+.💊:nth-child(29) .🔥 {
+  -webkit-animation-delay: -0.87s;
+          animation-delay: -0.87s;
+  border-color: #ff7b00;
+}
+.💊:nth-child(30) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.💊:nth-child(30) .🔥 {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s;
+  border-color: #ff8000;
+}
+.💊:nth-child(31) {
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+}
+.💊:nth-child(31) .🔥 {
+  -webkit-animation-delay: -0.93s;
+          animation-delay: -0.93s;
+  border-color: #ff8400;
+}
+.💊:nth-child(32) {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+.💊:nth-child(32) .🔥 {
+  -webkit-animation-delay: -0.96s;
+          animation-delay: -0.96s;
+  border-color: #ff8800;
+}
+.💊:nth-child(33) {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+.💊:nth-child(33) .🔥 {
+  -webkit-animation-delay: -0.99s;
+          animation-delay: -0.99s;
+  border-color: darkorange;
+}
+.💊:nth-child(34) {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.💊:nth-child(34) .🔥 {
+  -webkit-animation-delay: -1.02s;
+          animation-delay: -1.02s;
+  border-color: #ff9100;
+}
+.💊:nth-child(35) {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.💊:nth-child(35) .🔥 {
+  -webkit-animation-delay: -1.05s;
+          animation-delay: -1.05s;
+  border-color: #ff9500;
+}
+.💊:nth-child(36) {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+.💊:nth-child(36) .🔥 {
+  -webkit-animation-delay: -1.08s;
+          animation-delay: -1.08s;
+  border-color: #ff9900;
+}
+.💊:nth-child(37) {
+  -webkit-transform: scale(1.11);
+          transform: scale(1.11);
+}
+.💊:nth-child(37) .🔥 {
+  -webkit-animation-delay: -1.11s;
+          animation-delay: -1.11s;
+  border-color: #ff9d00;
+}
+.💊:nth-child(38) {
+  -webkit-transform: scale(1.14);
+          transform: scale(1.14);
+}
+.💊:nth-child(38) .🔥 {
+  -webkit-animation-delay: -1.14s;
+          animation-delay: -1.14s;
+  border-color: #ffa200;
+}
+.💊:nth-child(39) {
+  -webkit-transform: scale(1.17);
+          transform: scale(1.17);
+}
+.💊:nth-child(39) .🔥 {
+  -webkit-animation-delay: -1.17s;
+          animation-delay: -1.17s;
+  border-color: #ffa600;
+}
+.💊:nth-child(40) {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.💊:nth-child(40) .🔥 {
+  -webkit-animation-delay: -1.2s;
+          animation-delay: -1.2s;
+  border-color: #ffaa00;
+}
+.💊:nth-child(41) {
+  -webkit-transform: scale(1.23);
+          transform: scale(1.23);
+}
+.💊:nth-child(41) .🔥 {
+  -webkit-animation-delay: -1.23s;
+          animation-delay: -1.23s;
+  border-color: #ffae00;
+}
+.💊:nth-child(42) {
+  -webkit-transform: scale(1.26);
+          transform: scale(1.26);
+}
+.💊:nth-child(42) .🔥 {
+  -webkit-animation-delay: -1.26s;
+          animation-delay: -1.26s;
+  border-color: #ffb300;
+}
+.💊:nth-child(43) {
+  -webkit-transform: scale(1.29);
+          transform: scale(1.29);
+}
+.💊:nth-child(43) .🔥 {
+  -webkit-animation-delay: -1.29s;
+          animation-delay: -1.29s;
+  border-color: #ffb700;
+}
+.💊:nth-child(44) {
+  -webkit-transform: scale(1.32);
+          transform: scale(1.32);
+}
+.💊:nth-child(44) .🔥 {
+  -webkit-animation-delay: -1.32s;
+          animation-delay: -1.32s;
+  border-color: #ffbb00;
+}
+.💊:nth-child(45) {
+  -webkit-transform: scale(1.35);
+          transform: scale(1.35);
+}
+.💊:nth-child(45) .🔥 {
+  -webkit-animation-delay: -1.35s;
+          animation-delay: -1.35s;
+  border-color: #ffbf00;
+}
+.💊:nth-child(46) {
+  -webkit-transform: scale(1.38);
+          transform: scale(1.38);
+}
+.💊:nth-child(46) .🔥 {
+  -webkit-animation-delay: -1.38s;
+          animation-delay: -1.38s;
+  border-color: #ffc400;
+}
+.💊:nth-child(47) {
+  -webkit-transform: scale(1.41);
+          transform: scale(1.41);
+}
+.💊:nth-child(47) .🔥 {
+  -webkit-animation-delay: -1.41s;
+          animation-delay: -1.41s;
+  border-color: #ffc800;
+}
+.💊:nth-child(48) {
+  -webkit-transform: scale(1.44);
+          transform: scale(1.44);
+}
+.💊:nth-child(48) .🔥 {
+  -webkit-animation-delay: -1.44s;
+          animation-delay: -1.44s;
+  border-color: #ffcc00;
+}
+.💊:nth-child(49) {
+  -webkit-transform: scale(1.47);
+          transform: scale(1.47);
+}
+.💊:nth-child(49) .🔥 {
+  -webkit-animation-delay: -1.47s;
+          animation-delay: -1.47s;
+  border-color: #ffd000;
+}
+.💊:nth-child(50) {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.💊:nth-child(50) .🔥 {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+  border-color: #ffd500;
+}
+.💊 .🔥 {
+  width: 150%;
+  height: 50%;
+  border-top: 5px ridge transparent;
+  border-left: 2.5px ridge transparent;
+  -webkit-animation: 1.5s 💊 linear infinite;
+          animation: 1.5s 💊 linear infinite;
+}
+
+@-webkit-keyframes 💊 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes 💊 {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
