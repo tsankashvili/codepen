@@ -4,7 +4,7 @@
 Title | Pen | Video | Download | Created
 --- | --- | --- | --- | ---
 [Holy Spirit](/holy-spirit) | [Demo](https://codepen.io/Tsankashvili/live/KKpdGEO)  - [Code](https://codepen.io/Tsankashvili/pen/KKpdGEO) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/KKpdGEO) | Feb 13, 2020
-[Night King Symbol](/night-king-symbol) | [Demo](https://codepen.io/Tsankashvili/live/KYGwjO)  - [Code](https://codepen.io/Tsankashvili/pen/KYGwjO) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/KYGwjO) | APRIL 23, 2019
+[Night King Symbol](/night-king-symbol) | [Demo](https://codepen.io/Tsankashvili/live/KYGwjO)  - [Code](https://codepen.io/Tsankashvili/pen/KYGwjO) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/KYGwjO) | Apr 23, 2019
 [Drug and Dance](/drug-and-dance) | [Demo](https://codepen.io/Tsankashvili/live/BvGvPR)  - [Code](https://codepen.io/Tsankashvili/pen/BvGvPR) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/BvGvPR) | Jan 12, 2019
 [Orange Flower](/orange-flower) | [Demo](https://codepen.io/Tsankashvili/live/bObMOe)  - [Code](https://codepen.io/Tsankashvili/pen/bObMOe) | [Youtube](https://www.youtube.com/watch?v=Tm3qrZFxhdg) | [Zip](https://codepen.io/Tsankashvili/share/zip/bObMOe) | Dec 08, 2018
 [Hexagon](/hexagon) | [Demo](https://codepen.io/Tsankashvili/live/zmPXGX)  - [Code](https://codepen.io/Tsankashvili/pen/zmPXGX) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/zmPXGX) | Oct 16, 2018
