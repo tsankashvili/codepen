@@ -1,0 +1,49 @@
+$count: 50;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  perspective: 1000px;
+  *,*:after{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;
+  }
+}
+.🕊️{
+  &:nth-child(1){
+    transform: scale(-1,-1);
+  }
+  &:nth-child(2){
+    transform: scale(1,-1);
+  }
+}
+.👻{
+  width: 200px;
+  height: 100px;
+  animation: 💜 3s ease-in-out infinite;
+  &:after{
+    content: "";
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-radius: 50%;
+  }
+  @for $i from 0 through $count{
+    &:nth-child(#{$i + 1}){
+      animation-delay: -$i * 1s / $count;
+      &:after{
+        transform: rotate(-$i * 90deg / $count) translate($i * 200px / $count) scaleY(-1 - $i * 1 / $count);
+        border-color: hsla(250 + ($i * 50 / $count),100%,50%,1);
+      }
+    }
+  }  
+}
+@keyframes 💜{
+  100%{
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
