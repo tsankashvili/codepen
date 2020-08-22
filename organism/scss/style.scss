@@ -1,0 +1,44 @@
+$atom: 100;
+$speed: 3s;
+html,body{
+  width: 100%;height: 100%;
+}
+body{
+  background-color: #140032;
+  overflow: hidden;
+  margin:0;
+  perspective: 1000px;
+  *,*:after{
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;border-radius: 50%;
+  }
+}
+.organism{
+  &:first-child{
+    transform: scale(-1,-1)
+  }
+}
+.atom{
+  width: 100px;
+  height: 100px;
+  animation: life $speed ease-in-out infinite;
+  &:after{
+    content: "";
+    width: inherit;
+    height: inherit;
+    border-bottom: 2px dotted transparent;
+  }
+  @for $i from 0 through $atom{
+    &:nth-child(#{$i + 1}){
+      animation-delay: -$i * $speed / $atom;
+      &:after{
+        transform: rotateX($i * 720deg / $atom) translate($i * 500px / $atom) scale($i * 4 / $atom);
+        border-color: hsla(250 + ($i * 50 / $atom),100%,50%,1);
+      }
+    }
+  }
+}
+@keyframes life {
+  50%{
+    transform: rotateY(180deg) translateY(200px) scale(1,-1);
+  }
+}

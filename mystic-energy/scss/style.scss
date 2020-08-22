@@ -1,0 +1,49 @@
+body {
+  background-color: #140032;
+  overflow: hidden;
+  margin: 0;
+  * {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+  }
+}
+
+.master {
+  &:nth-child(1) {
+    transform: scale(-1, -1) translate(-150px);
+  }
+  &:nth-child(2) {
+    transform: scale(1, -1) translate(-150px);
+  }
+  &:nth-child(3) {
+    transform: scale(-1, 1) translate(-150px);
+  }
+  &:nth-child(4) {
+    transform: scale(1, 1) translate(-150px);
+  }
+}
+.magic {
+  width: 150px;
+  height: 20px;
+  border-left: 10px solid orangered;
+  border-right: 1px solid darkorange;
+  animation: 3s ENERGY ease-in-out infinite;
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      animation-delay: -$i * 1s / 25;
+      transform: rotate($i * 360deg / 50)
+        translate(200px)
+        scale(-1 - $i * 1 / 50);
+    }
+  }
+}
+@keyframes ENERGY {
+  50% {
+    transform: rotateY(360deg) translate(-200px);
+  }
+}
