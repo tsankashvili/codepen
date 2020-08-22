@@ -2,7 +2,6 @@
 
 > Demo or it didn't happen
 
-<<<<<<< HEAD
 | Title                                                   | Pen                                                                                                                                                          | Video                                                  | Download                                                                          | Created        |
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ | --------------------------------------------------------------------------------- | -------------- |
 | [Holy Spirit](/holy-spirit)                             | [Demo](https://codepen.io/Tsankashvili/live/KKpdGEO) - [Code](https://codepen.io/Tsankashvili/pen/KKpdGEO)                                                   | -                                                      | [Zip](https://codepen.io/Tsankashvili/share/zip/KKpdGEO)                          | Feb 11, 2020   |
@@ -86,4 +85,3 @@ Title | Pen | Video | Download | Created
 [Magical dots spikes](/magical-dots-spikes) | [Demo](https://codepen.io/Tsankashvili/live/RpdNNa)  - [Code](https://codepen.io/Tsankashvili/pen/RpdNNa) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/RpdNNa) | Apr 3, 2017
 [Dancing dots](/dancing-dots) | [Demo](https://codepen.io/Tsankashvili/live/yMRyzO)  - [Code](https://codepen.io/Tsankashvili/pen/yMRyzO) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/yMRyzO) | Mar 28, 2017
 [rainbow spinners](/rainbow-spinners) | [Demo](https://codepen.io/Tsankashvili/live/qrMaxy)  - [Code](https://codepen.io/Tsankashvili/pen/qrMaxy) | - | [Zip](https://codepen.io/Tsankashvili/share/zip/qrMaxy) | Mar 27, 2017
->>>>>>> 22ea155930cb6a8c40912127e56854555a8dfbfa
